@@ -1,16 +1,20 @@
 import React from "react";
 import { ReactComponent as Logo } from "../images/logo.svg";
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+
 function Header() {
   return (
     <>
-      <header className="header">
-        <Logo className="header__logo" />
-        <nav className="header__nav">
-          <a href="#root">Home</a>
-          <a href="#root">Portfolio</a>
-          <a href="#root">Contact Me</a>
-        </nav>
-      </header>
+      <Router>
+        <header className="header">
+          <Logo className="header__logo" />
+          <nav className="header__nav">
+            <Link to="/">Home</Link>
+            <Link to="/portfolio">Portfolio</Link>
+            <Link to="/contact">Contact Me</Link>
+          </nav>
+        </header>
+      </Router>
     </>
   );
 }
