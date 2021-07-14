@@ -1,6 +1,6 @@
 import React from "react";
-import { ReactComponent as Logo } from "../images/logo.svg";
-function Main() {
+
+function Home() {
   return (
     <>
       <main className="home">
@@ -37,4 +37,4 @@ function Main() {
   );
 }
 
-export default Main;
+export default Home;
