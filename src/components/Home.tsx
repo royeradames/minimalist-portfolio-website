@@ -1,5 +1,7 @@
 import React from "react";
-
+import selfie from "../images/homepage/mobile/image-homepage-profile.jpg";
+import selfieTablet from "../images/homepage/tablet/image-homepage-profile.jpg";
+import selfieDesktop from "../images/homepage/desktop/image-homepage-profile.jpg";
 function Home() {
   return (
     <>
@@ -13,7 +15,14 @@ function Home() {
             About Me
           </button>
         </article>
+
         <article className="about-me">
+          <img
+            src={selfie}
+            srcSet={`${selfie} 378w, ${selfieTablet} 768w, ${selfieDesktop} 1440w`}
+            alt="Selfie"
+            className="about-me__selfie"
+          />
           <h2 className="about-me__title">About Me</h2>
           <p className="about-me__message">
             I’m a junior front-end developer looking for a new role in an
