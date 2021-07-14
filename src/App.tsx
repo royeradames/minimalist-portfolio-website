@@ -1,8 +1,16 @@
 import React from "react";
 import "./css/main.scss";
 
+// components
+import Header from "./components/Header";
+import Footer from "./components/Footer";
 function App() {
-  return <></>;
+  return (
+    <>
+      <Header />
+      <Footer />
+    </>
+  );
 }
 
 export default App;
