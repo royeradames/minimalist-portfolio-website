@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova:wght@400;700&family=Public+Sans&display=swap');
+
+@import-normalize;
+@import "reset-css";
+
+
+html{
+    font-size:  10px;
+    box-sizing: border-box;
+    min-height: 100vh;
+}
+
+*, *::before, *::after{
+    font-size: inherit;
+    box-sizing: inherit;
+}
+
+h1, h2, h3, h4{
+    font-family: 'Ibarra Real Nova', serif;
+}
+
+p{
+    font-family: 'Public Sans', sans-serif;
+}
+
+img{
+    max-width: 100%;
+}
