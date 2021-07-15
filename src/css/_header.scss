@@ -1,15 +1,28 @@
 .header{
-    
-    &__logo{
+    display: grid;
 
+    // mobile layout
+    grid-template:
+        "logo menu-icon" 1fr
+        "menu-links menu-links" 1fr
+        / 1fr 1fr
+    ;
+    &__logo{
+        grid-area: logo;
     }
     &__hamburger{
-
+        grid-area: menu-icon;
+        justify-self: end;
     }
     &__close{
+        grid-area: menu-icon;
+        justify-self: end;
 
+        // start with hidding the close icon
+        display: none;
     }
     &__nav{
-
+        grid-area: menu-links;
+        justify-self: end;
     }
 }
