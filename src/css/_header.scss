@@ -28,9 +28,12 @@
     &__close{
         grid-area: menu-icon;
         justify-self: end;
+        &:hover{
+            cursor: pointer;
+        }
     }
     &__nav{
-        grid-area: menu-links;
+        // grid-area: menu-links;
         justify-self: end;
 
         display: flex;
@@ -43,6 +46,11 @@
         // float the menu above other content
         position: absolute;
         top: 8.8rem;
+
+        // fade in the menu
+        opacity: 0;
+        transition: .3s opacity linear;
+        z-index: -1;
         
         &-link{
             text-align: center;
@@ -62,6 +70,10 @@
     }
 
     // for hidding the icon menu and menu links on mobile
+    &__open{
+        z-index: 1;
+        opacity: 1;
+    }
     &__hide{
         display: none;
     }

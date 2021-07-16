@@ -25,7 +25,7 @@ function Header() {
           className={`header__close ${isMenuOpen ? "" : "header__hide"}`}
           onClick={() => mobileMenuLogic(isMenuOpen, setIsMenuOpen)}
         />
-        <nav className={`header__nav ${isMenuOpen ? "" : "header__hide"}`}>
+        <nav className={`header__nav ${isMenuOpen ? " header__open" : ""}`}>
           <Link className="header__nav-link" to="/">
             Home
           </Link>
