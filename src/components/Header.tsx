@@ -16,7 +16,9 @@ function Header() {
   return (
     <>
       <header className="header">
-        <Logo className="header__logo" />
+        <Link to="/">
+          <Logo className="header__logo" />
+        </Link>
         <Hamburger
           className={`header__hamburger ${isMenuOpen ? "header__hide" : ""}`}
           onClick={() => mobileMenuLogic(isMenuOpen, setIsMenuOpen)}
