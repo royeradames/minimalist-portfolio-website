@@ -3,26 +3,66 @@
 
     // mobile layout
     grid-template:
-        "logo menu-icon" 1fr
+        "logo menu-icon" min-content
         "menu-links menu-links" 1fr
         / 1fr 1fr
     ;
+
+    // add spacing between icon and links 
+    row-gap: 2.4rem;
+    
+    // add white space away from the edges
+    margin: 3.2rem 3.2rem 0;
+
+    
     &__logo{
         grid-area: logo;
     }
     &__hamburger{
         grid-area: menu-icon;
         justify-self: end;
+        &:hover{
+            cursor: pointer;
+        }
     }
     &__close{
         grid-area: menu-icon;
         justify-self: end;
-
-        // start with hidding the close icon
-        display: none;
     }
     &__nav{
         grid-area: menu-links;
         justify-self: end;
+
+        display: flex;
+        flex-direction: column;
+
+        background-color: var(--gray-blue-900);
+
+        padding: 4rem 6.3rem;
+
+        // float the menu above other content
+        position: absolute;
+        top: 8.8rem;
+        
+        &-link{
+            text-align: center;
+            color: var(--white);
+            font-size: 1.2rem;
+            letter-spacing: .02rem;
+            text-decoration: none;
+            
+            text-transform: uppercase;
+
+            &-portfolio{
+                padding: 3.2rem 0;
+            }
+        }
+
+        
+    }
+
+    // for hidding the icon menu and menu links on mobile
+    &__hide{
+        display: none;
     }
 }
