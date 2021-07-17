@@ -1,0 +1,13 @@
+// general styles
+.home{
+    margin: 3.2rem 3.2rem 0 ;
+
+    &__title{
+        font-weight: 900;
+        color: var(--gray-blue-900);
+        font-size: 4.2rem;
+        letter-spacing: -.036rem;
+        line-height: 4.2rem;
+        margin: 2.4rem 0 3.2rem;
+    }
+}
