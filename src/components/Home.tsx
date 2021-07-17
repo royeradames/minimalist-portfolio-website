@@ -2,16 +2,28 @@ import React from "react";
 import selfie from "../images/homepage/mobile/image-homepage-profile.jpg";
 import selfieTablet from "../images/homepage/tablet/image-homepage-profile.jpg";
 import selfieDesktop from "../images/homepage/desktop/image-homepage-profile.jpg";
+import homeHeroMobile from "../images/homepage/mobile/image-homepage-hero.jpg";
+import homeHeroTable from "../images/homepage/tablet/image-homepage-hero.jpg";
+import homeHeroDesktop from "../images/homepage/desktop/image-homepage-hero.jpg";
 function Home() {
+  const mobileView = "368w";
+  const tabletView = "768w";
+  const desktopView = "1440w";
   return (
     <>
       <main className="home">
-        <article className="home__welcome-message">
-          <h1 className="home__welcome-message-title">
+        <article className="home__welcome-message welcome-message">
+          <img
+            src={homeHeroMobile}
+            srcSet={`${homeHeroMobile} ${mobileView}, ${homeHeroTable} ${tabletView}, ${homeHeroDesktop} ${desktopView}`}
+            alt="Mac desktop and laptopn on a table."
+            className="home__hero"
+          />
+          <h1 className="home__welcome-message-title welcome-message__title">
             Hey, I’m Alex Spencer and I love building beautiful websites
           </h1>
 
-          <button className="home__welcome-message-button button">
+          <button className="home__welcome-message-button button welcome-message__button">
             About Me
           </button>
         </article>
