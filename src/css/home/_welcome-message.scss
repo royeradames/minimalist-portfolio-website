@@ -1,0 +1,9 @@
+.welcome-message{
+        display: grid;
+
+    &__hero{
+        // move hero image away from menu
+        justify-self: center;
+
+    }
+}
