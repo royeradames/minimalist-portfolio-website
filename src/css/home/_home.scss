@@ -10,4 +10,14 @@
         line-height: 4.2rem;
         margin: 2.4rem 0 3.2rem;
     }
+
+    &__message{
+        font-size: 1.6rem;
+        line-height: 3rem;
+        color: var(--gray-blue-900);
+        opacity: .8;
+    }
+
+   
+
 }
