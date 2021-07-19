@@ -23,7 +23,13 @@
         border: .1rem solid var(--gray-200);
         background-color: var(--gray-200);
         
-        
+        // add spacing to each line
+        &-first{
+            margin: 3.2rem 0;
+        }
+        &-last{
+            margin-top: 5.1rem;
+        }
     }
 
 }
