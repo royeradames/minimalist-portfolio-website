@@ -1,5 +1,7 @@
 .button-disable-button{
+
     background-color: var(--grey-200);
+
 
     &__icon{
         fill: var(--white);
@@ -9,4 +11,5 @@
             background-color: var(--grey-200);
         }
     }
+
 }

@@ -49,6 +49,7 @@ function Home() {
             className="home__selfie about-me__selfie"
           />
           <div className="home__horizontal-line home__horizontal-line-first about-me__horizontal-line" />
+
           <h2 className="home__title about-me__title">About Me</h2>
           <p className="home__message about-me__message">
             I’m a junior front-end developer looking for a new role in an
