@@ -18,6 +18,12 @@
         opacity: .8;
     }
 
-   
+    &__horizontal-line {
+        // show horizontal line
+        border: .1rem solid var(--gray-200);
+        background-color: var(--gray-200);
+        
+        
+    }
 
 }
