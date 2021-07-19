@@ -1,0 +1,12 @@
+.about-me{
+    // spacing between other articles
+    margin: 9.6rem 0 11.5rem;
+
+    display: grid;
+    
+    &__selfie{
+        // center image
+        justify-self: center;
+    }
+
+}
