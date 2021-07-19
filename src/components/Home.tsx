@@ -5,10 +5,14 @@ import selfieDesktop from "../images/homepage/desktop/image-homepage-profile.jpg
 import homeHeroMobile from "../images/homepage/mobile/image-homepage-hero.jpg";
 import homeHeroTable from "../images/homepage/tablet/image-homepage-hero.jpg";
 import homeHeroDesktop from "../images/homepage/desktop/image-homepage-hero.jpg";
+import { ReactComponent as DownArrow } from "../images/icons/down-arrows.svg";
+
 function Home() {
+  // const [isButtonHover, setIsButtonHover] = useState(false)
   const mobileView = "368w";
   const tabletView = "768w";
   const desktopView = "1440w";
+
   return (
     <>
       <main className="home">
@@ -19,24 +23,29 @@ function Home() {
             alt="Mac desktop and laptopn on a table."
             className="home__hero"
           />
-          <h1 className="home__welcome-message-title welcome-message__title">
+          <h1 className="home__title welcome-message__title">
             Hey, I’m Alex Spencer and I love building beautiful websites
           </h1>
 
-          <button className="home__welcome-message-button button welcome-message__button">
-            About Me
+          <button className="button button-primary-normal button-primary-normal ">
+            <div className="button__icon-background button-primary-normal__background button-primary-normal__background">
+              <DownArrow className="button__icon button-primary-normal__icon button-primary-normal__icon " />
+            </div>
+            <p className="button__text button-primary-normal__text button-primary-normal__text">
+              About Me
+            </p>
           </button>
         </article>
 
-        <article className="about-me">
+        <article className="home__about-me about-me">
           <img
             src={selfie}
             srcSet={`${selfie} 378w, ${selfieTablet} 768w, ${selfieDesktop} 1440w`}
             alt="Selfie"
-            className="about-me__selfie"
+            className="home__selfie about-me__selfie"
           />
-          <h2 className="about-me__title">About Me</h2>
-          <p className="about-me__message">
+          <h2 className="home__title about-me__title">About Me</h2>
+          <p className="home__message about-me__message">
             I’m a junior front-end developer looking for a new role in an
             exciting company. I focus on writing accessible HTML, using modern
             CSS practices and writing clean JavaScript. When writing JavaScript
@@ -47,11 +56,13 @@ function Home() {
             for a walk, run or cycling. I’d love you to check out my work.
           </p>
         </article>
-        <article className="contact-me">
-          <h2 className="contact-me__title">
+        <article className="home__contact-me contact-me">
+          <h2 className="home__title contact-me__title">
             Go to Portfolio Interested in doing a project together?
           </h2>
-          <button className="contact-me__button button">Contact Me</button>
+          <button className="home__button contact-me__button button">
+            Contact Me
+          </button>
         </article>
       </main>
     </>

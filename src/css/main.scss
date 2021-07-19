@@ -1,3 +1,12 @@
 @use "./global";
 @use "./root";
 @use "./header";
+
+// button
+@use "./button/button";
+@use "./button/primary-normal";
+@use "./button/primary-disable";
+
+// home styles
+@use "./home/home";
+@use "./home/welcome-message";
