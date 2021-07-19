@@ -1,5 +1,5 @@
 import React from "react";
-import selfie from "../images/homepage/mobile/image-homepage-profile.jpg";
+import selfieMobile from "../images/homepage/mobile/image-homepage-profile.jpg";
 import selfieTablet from "../images/homepage/tablet/image-homepage-profile.jpg";
 import selfieDesktop from "../images/homepage/desktop/image-homepage-profile.jpg";
 import homeHeroMobile from "../images/homepage/mobile/image-homepage-hero.jpg";
@@ -39,11 +39,16 @@ function Home() {
 
         <article className="home__about-me about-me">
           <img
-            src={selfie}
-            srcSet={`${selfie} 378w, ${selfieTablet} 768w, ${selfieDesktop} 1440w`}
+            src={selfieMobile}
+            srcSet={`
+            ${selfieTablet} 768w, 
+            ${selfieDesktop} 1440w, 
+            ${selfieMobile} 368w,
+                   `}
             alt="Selfie"
             className="home__selfie about-me__selfie"
           />
+          <div className="home__horizontal-line home__horizontal-line-first about-me__horizontal-line" />
           <h2 className="home__title about-me__title">About Me</h2>
           <p className="home__message about-me__message">
             I’m a junior front-end developer looking for a new role in an
@@ -55,6 +60,7 @@ function Home() {
             find me outdoors. I love being out in nature whether that’s going
             for a walk, run or cycling. I’d love you to check out my work.
           </p>
+          <div className="home__horizontal-line home__horizontal-line-last about-me__horizontal-line" />
         </article>
         <article className="home__contact-me contact-me">
           <h2 className="home__title contact-me__title">
