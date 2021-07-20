@@ -11,15 +11,7 @@ function Footer() {
           <Logo className="footer__logo" />
         </Link>
         <Nav />
-        <a href="https://github.com/royeradames">
-          <Github className="footer__icon footer__github" />
-        </a>
-        <a href="#root">
-          <Twitter className="footer__icon footer__twitter" />
-        </a>
-        <a href="https://www.linkedin.com/in/royer-adames/">
-          <Linkedin className="footer__icon footer__linkedin" />
-        </a>
+        <SocialMedia />
       </footer>
     </>
   );
