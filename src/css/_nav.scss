@@ -1,0 +1,19 @@
+.nav{
+    // layout
+    display: grid;
+    row-gap: 3.2rem;
+
+    &__link{
+        // text
+        text-align: center;
+        color: var(--white);
+        font-size: 1.2rem;
+        letter-spacing: .02rem;
+        text-decoration: none;
+        text-transform: uppercase;
+
+        &:hover{
+            color: var(--green);
+        }
+    }
+}
