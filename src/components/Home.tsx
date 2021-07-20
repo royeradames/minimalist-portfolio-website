@@ -6,6 +6,7 @@ import homeHeroMobile from "../images/homepage/mobile/image-homepage-hero.jpg";
 import homeHeroTable from "../images/homepage/tablet/image-homepage-hero.jpg";
 import homeHeroDesktop from "../images/homepage/desktop/image-homepage-hero.jpg";
 import { ReactComponent as DownArrow } from "../images/icons/down-arrows.svg";
+import { Link } from "react-router-dom";
 
 function Home() {
   // const [isButtonHover, setIsButtonHover] = useState(false)
@@ -61,16 +62,16 @@ function Home() {
             find me outdoors. I love being out in nature whether that’s going
             for a walk, run or cycling. I’d love you to check out my work.
           </p>
-          <button className="secondary-button secondary-normal about-me__button">
+          <button className="secondary-button secondary-normal ">
             go to portfolio
           </button>
           <div className="home__horizontal-line home__horizontal-line-last about-me__horizontal-line" />
         </article>
         <article className="home__contact-me contact-me">
           <h2 className="home__title contact-me__title">
-            Go to Portfolio Interested in doing a project together?
+            Interested in doing a project together?
           </h2>
-          <button className="home__button contact-me__button button">
+          <button className="secondary-button secondary-normal ">
             Contact Me
           </button>
         </article>
