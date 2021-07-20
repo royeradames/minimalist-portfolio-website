@@ -1,4 +1,5 @@
 .button{
+    //layout
     display: grid;
     grid-template:
         "icon text" 1fr
@@ -12,6 +13,9 @@
     // remove default border 
     border: none;
     padding: 0;
+
+    //decoration
+    cursor: pointer;
 
     &__icon{
         // center icon
