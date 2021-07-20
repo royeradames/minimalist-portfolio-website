@@ -3,7 +3,7 @@ import { ReactComponent as Logo } from "../images/logo.svg";
 import { ReactComponent as Hamburger } from "../images/icons/hamburger.svg";
 import { ReactComponent as Close } from "../images/icons/close.svg";
 import { Link } from "react-router-dom";
-
+import Nav from "./Nav";
 function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const mobileMenuLogic = (
@@ -27,20 +27,7 @@ function Header() {
           className={`header__close ${isMenuOpen ? "" : "header__hide"}`}
           onClick={() => mobileMenuLogic(isMenuOpen, setIsMenuOpen)}
         />
-        <nav className={`header__nav ${isMenuOpen ? " header__open" : ""}`}>
-          <Link className="header__nav-link" to="/">
-            Home
-          </Link>
-          <Link
-            className="header__nav-link header__nav-link-portfolio"
-            to="/portfolio"
-          >
-            Portfolio
-          </Link>
-          <Link className="header__nav-link" to="/contact">
-            Contact Me
-          </Link>
-        </nav>
+        <Nav menu={`header__nav ${isMenuOpen ? " header__open" : ""}`} />
       </header>
     </>
   );
