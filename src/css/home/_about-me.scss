@@ -2,11 +2,17 @@
     // spacing between other articles
     margin: 9.6rem 0 11.5rem;
 
+    // layout
     display: grid;
     
     &__selfie{
         // center image
         justify-self: center;
+    }
+
+    &__button{
+        // spacing
+        margin: 2.4rem 0 5.1rem;
     }
 
 }
