@@ -1,7 +1,10 @@
-.header{
-    display: grid;
+$table: 760px;
+$desktop: 1440px;
 
+.header{
+    
     // mobile layout
+    display: grid;
     grid-template:
         "logo menu-icon" min-content
         "menu-links menu-links" 1fr
@@ -36,6 +39,11 @@
             cursor: pointer;
             fill: var(--green);
         }
+
+        // hide icon
+        @media(min-width: $table){
+            display: none;
+        }
     }
     &__close{
         // layout
@@ -44,46 +52,41 @@
 
         //decoration
         fill: var(--gray-blue-900);
+        
         &:hover{
             // decoration
             cursor: pointer;
             fill: var(--green);
         }
+
+        // hide icon
+        @media(min-width: $table){
+            display: none;
+        }
     }
     &__nav{
-        // children layout
-        display: flex;
-        flex-direction: column;
-        padding: 4rem 6.3rem;
-
         // decoration
         background-color: var(--gray-blue-900);
+        @media(min-width: $table){
+            background-color: initial;
+        }
 
         // float the menu above other content
         position: absolute;
         top: 13%;
         right: 7%;
+        @media(min-width: $table){
+            position: initial;
+        }
 
         // fade in the menu
         opacity: 0;
         transition: .3s opacity linear;
         z-index: -1;
-        
-        &-link{
-            // text
-            text-align: center;
-            color: var(--white);
-            font-size: 1.2rem;
-            letter-spacing: .02rem;
-            text-decoration: none;
-            text-transform: uppercase;
-
-            &-portfolio{
-                padding: 3.2rem 0;
-            }
+        @media(min-width:$table){
+            opacity: initial;
+            z-index: initial;
         }
-
-        
     }
 
     // for hidding the icon menu and menu links on mobile
