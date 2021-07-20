@@ -62,9 +62,11 @@ function Home() {
             find me outdoors. I love being out in nature whether that’s going
             for a walk, run or cycling. I’d love you to check out my work.
           </p>
-          <button className="secondary-button secondary-normal ">
-            go to portfolio
-          </button>
+          <Link to="/portfolio" className="about-me__button">
+            <button className="secondary-button secondary-normal ">
+              go to portfolio
+            </button>
+          </Link>
           <div className="home__horizontal-line home__horizontal-line-last about-me__horizontal-line" />
         </article>
         <article className="home__contact-me contact-me">
