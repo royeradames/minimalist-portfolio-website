@@ -28,17 +28,20 @@ function Home() {
             Hey, I’m Alex Spencer and I love building beautiful websites
           </h1>
 
-          <button className="button button-primary-normal button-primary-normal ">
-            <div className="button__icon-background button-primary-normal__background button-primary-normal__background">
-              <DownArrow className="button__icon button-primary-normal__icon button-primary-normal__icon " />
-            </div>
-            <p className="button__text button-primary-normal__text button-primary-normal__text">
-              About Me
-            </p>
-          </button>
+          <a href="#about">
+            <button className="button button-primary-normal button-primary-normal ">
+              <div className="button__icon-background button-primary-normal__background button-primary-normal__background">
+                <DownArrow className="button__icon button-primary-normal__icon button-primary-normal__icon " />
+              </div>
+
+              <p className="button__text button-primary-normal__text button-primary-normal__text">
+                About Me
+              </p>
+            </button>
+          </a>
         </article>
 
-        <article className="home__about-me about-me">
+        <article className="home__about-me about-me" id="about">
           <img
             src={selfieMobile}
             srcSet={`
