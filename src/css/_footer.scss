@@ -8,5 +8,8 @@
     // decoration
     background-color: var(--gray-blue-900);
 
-    
+    &__logo{
+        // change logo color
+        fill: var(--white);
+    }
 }
