@@ -1,0 +1,9 @@
+.contact-me{
+    // layout
+    display: grid;
+    justify-items: center;
+
+    &__title{
+        text-align: center;
+    }
+}
