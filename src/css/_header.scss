@@ -18,19 +18,36 @@
     &__logo{
         // change logo color
         fill: var(--gray-blue-900);
+
+        &:hover{
+            fill: var(--green)
+        }
     }
     &__hamburger{
+        // layout
         grid-area: menu-icon;
         justify-self: end;
+
+        // decoration
+        fill: var(--gray-blue-900);
+
         &:hover{
+            // decoration
             cursor: pointer;
+            fill: var(--green);
         }
     }
     &__close{
+        // layout
         grid-area: menu-icon;
         justify-self: end;
+
+        //decoration
+        fill: var(--gray-blue-900);
         &:hover{
+            // decoration
             cursor: pointer;
+            fill: var(--green);
         }
     }
     &__nav{
