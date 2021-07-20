@@ -33,19 +33,18 @@
         }
     }
     &__nav{
-        // grid-area: menu-links;
-        justify-self: end;
-
+        // children layout
         display: flex;
         flex-direction: column;
-
-        background-color: var(--gray-blue-900);
-
         padding: 4rem 6.3rem;
+
+        // decoration
+        background-color: var(--gray-blue-900);
 
         // float the menu above other content
         position: absolute;
-        top: 8.8rem;
+        top: 13%;
+        right: 7%;
 
         // fade in the menu
         opacity: 0;
@@ -53,12 +52,12 @@
         z-index: -1;
         
         &-link{
+            // text
             text-align: center;
             color: var(--white);
             font-size: 1.2rem;
             letter-spacing: .02rem;
             text-decoration: none;
-            
             text-transform: uppercase;
 
             &-portfolio{
