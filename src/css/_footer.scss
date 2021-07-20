@@ -11,5 +11,9 @@
     &__logo{
         // change logo color
         fill: var(--white);
+
+        &:hover{
+            fill: var(--green);
+        }
     }
 }
