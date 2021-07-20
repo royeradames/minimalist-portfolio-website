@@ -13,6 +13,9 @@
     &__button{
         // spacing
         margin: 2.4rem 0 5.1rem;
+
+        // remove cliable area outside button
+        justify-self: start;
     }
 
 }
