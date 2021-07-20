@@ -16,7 +16,8 @@
 
     
     &__logo{
-        grid-area: logo;
+        // change logo color
+        fill: var(--gray-blue-900);
     }
     &__hamburger{
         grid-area: menu-icon;
