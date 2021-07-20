@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import { ReactComponent as Github } from "../images/icons/github.svg";
 import { ReactComponent as Twitter } from "../images/icons/twitter.svg";
 import { ReactComponent as LinkedIn } from "../images/icons/linkedin.svg";
