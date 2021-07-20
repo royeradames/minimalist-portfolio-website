@@ -73,9 +73,11 @@ function Home() {
           <h2 className="home__title contact-me__title">
             Interested in doing a project together?
           </h2>
-          <button className="secondary-button secondary-normal ">
-            Contact Me
-          </button>
+          <Link to="contact" className="contact-me__button">
+            <button className="secondary-button secondary-normal ">
+              Contact Me
+            </button>
+          </Link>
         </article>
       </main>
     </>
