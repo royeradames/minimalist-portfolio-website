@@ -17,7 +17,14 @@ $desktop: 1440px;
     &__title{
         // children layout
         text-align: center;
-        
+        @media(min-width: $tablet){
+            margin-bottom: initial;
+        }
+
+        @media(min-width: $tablet){
+            // parent layout
+            grid-area: title;
+        }
         
     }
    
