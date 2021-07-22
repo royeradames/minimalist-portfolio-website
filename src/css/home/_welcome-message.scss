@@ -1,10 +1,26 @@
+$tablet: 768px;
+$desktop: 1440px;
+
 .welcome-message{
-        display: grid;
+    // layout
+    display: grid;
+    @media(min-width: $tablet){
+        // overlay call to action and hero-image
+        grid-template:
+            "hero" min-content
+            "hero" min-content
+            / 1fr
+        ;
+    }
 
     &__hero{
-        // move hero image away from menu
-        margin-top: 4rem;
-        justify-self: center;
+
+        // size
+        width: 100%;
+        
 
     }
+
+    
+    
 }
