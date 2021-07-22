@@ -1,14 +1,26 @@
+$tablet: 768px;
+$desktop: 1440px;
+
 .footer{
     // layout
     display: grid;
     justify-items: center;
     padding: 5.6rem 0;
     row-gap: 4rem;
+    @media(min-width: $tablet){
+        grid-template:
+            "logo menu-links social-media" 1fr
+            /min-content min-content 1fr
+        ;
+        padding: 2.4rem 4rem;
+        column-gap: 4.8rem;
+    }
 
     // decoration
     background-color: var(--gray-blue-900);
-
+    
     &__logo{
+        
         // change logo color
         fill: var(--white);
 
@@ -16,4 +28,8 @@
             fill: var(--green);
         }
     }
+
+   
+
+   
 }
