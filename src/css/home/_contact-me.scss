@@ -38,7 +38,9 @@ $desktop: 1440px;
             // parent layout
             grid-area: horizontal-line;
 
-            
+            // fix horizontal line being show vertically
+            height: .1rem;
+            width: 100%;
         }
     }
 
