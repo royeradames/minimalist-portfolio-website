@@ -1,9 +1,26 @@
+$tablet: 768px;
+$desktop: 1440px;
+
 .contact-me{
     // layout
     display: grid;
     justify-items: center;
 
-    &__title{
-        text-align: center;
+    @media(min-width: $tablet){
+        grid-template:
+            "title horitonzontal-line btn" 1fr
+            / 35rem 1fr min-content
+        ;
+        align-items: center;
+        column-gap: 3.2rem;
     }
+    &__title{
+        // children layout
+        text-align: center;
+        
+        
+    }
+   
+
+    
 }
