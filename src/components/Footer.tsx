@@ -10,8 +10,8 @@ function Footer() {
         <Link to="/">
           <Logo className="footer__logo" />
         </Link>
-        <Nav />
-        <SocialMedia />
+        <Nav footer="footer" />
+        <SocialMedia footer="footer" />
       </footer>
     </>
   );

@@ -2,9 +2,11 @@ import React from "react";
 import { ReactComponent as Github } from "../images/icons/github.svg";
 import { ReactComponent as Twitter } from "../images/icons/twitter.svg";
 import { ReactComponent as LinkedIn } from "../images/icons/linkedin.svg";
-const SocialMedia = () => {
+const SocialMedia = (props: { footer: string }) => {
   return (
-    <article className="social-media">
+    <article
+      className={`social-media ${props.footer ? "footer__social-media" : ""}`}
+    >
       <a href="https://github.com/royeradames" target="_blank" rel="noreferrer">
         <Github className="social-media__icon social-media__github" />
       </a>
