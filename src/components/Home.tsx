@@ -15,7 +15,7 @@ function Home() {
 
   return (
     <>
-      <main className="home">
+      <article className="home">
         <article className="home__welcome-message welcome-message">
           <img
             src={homeHeroMobile}
@@ -84,7 +84,7 @@ function Home() {
             </button>
           </Link>
         </article>
-      </main>
+      </article>
     </>
   );
 }
