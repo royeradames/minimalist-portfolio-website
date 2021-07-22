@@ -23,7 +23,12 @@ $desktop: 1440px;
         }
     }
 
-  
+    &__content{
+        @media(min-width: $tablet){
+            // layout
+            grid-area: content;
+        }
+    }
 
     &__message{
         // layout
