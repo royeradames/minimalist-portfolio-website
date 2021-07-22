@@ -8,7 +8,7 @@ $desktop: 1440px;
 
     @media(min-width: $tablet){
         grid-template:
-            "title horitonzontal-line btn" 1fr
+            "title horizontal-line btn" 1fr
             / 35rem 1fr min-content
         ;
         align-items: center;
@@ -31,7 +31,15 @@ $desktop: 1440px;
         // hidde
         display: none;
 
-        
+        @media(min-width: $tablet){
+            // show
+            display: initial;
+
+            // parent layout
+            grid-area: horizontal-line;
+
+            
+        }
     }
 
     
