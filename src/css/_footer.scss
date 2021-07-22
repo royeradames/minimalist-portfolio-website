@@ -44,5 +44,10 @@ $desktop: 1440px;
         }
     }
 
-   
+    &__social-media{
+        @media(min-width: $tablet){
+            // layout
+            grid-area: social-media;
+        }
+    }
 }
