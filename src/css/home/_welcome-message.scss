@@ -27,5 +27,19 @@ $desktop: 1440px;
     &__title{
         margin-top: 2.4rem;
     }
-    
+    &__call-to-action{
+        @media(min-width: $tablet){
+                // decoration
+                background-color: var(--white);
+
+                // layout
+                padding: 5.6rem 5.6rem 0 0;
+                grid-column: 1;
+                grid-row: 2;
+
+                // size
+                width: 51.4rem;
+                height: 27.8rem;
+            }
+    }
 }
