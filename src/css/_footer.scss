@@ -36,7 +36,12 @@ $desktop: 1440px;
             grid-area: menu-links;
         }
         
-       
+        &-link{
+            @media(min-width: $tablet){
+                // decoration
+                color: var(--white);
+            }
+        }
     }
 
    
