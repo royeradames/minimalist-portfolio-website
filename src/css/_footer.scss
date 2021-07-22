@@ -30,7 +30,14 @@ $desktop: 1440px;
         }
     }
 
-   
+    &__nav{
+        @media(min-width: $tablet){
+            // parent layout
+            grid-area: menu-links;
+        }
+        
+       
+    }
 
    
 }
