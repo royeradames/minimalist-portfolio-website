@@ -7,12 +7,14 @@ $desktop: 1440px;
         // spacing between other articles
     margin: 9.6rem 0 11.5rem;
     @media(min-width: $tablet){
+        
         grid-template: 
             "img content" 1fr
-            / 1fr 1fr
+            / max-content 1fr
         ;
         column-gap: 6.9rem;
     }
+    
     &__selfie{
         // center image
         justify-self: center;
@@ -21,6 +23,7 @@ $desktop: 1440px;
             // layout
             grid-area: img;
         }
+
     }
 
     &__content{
@@ -29,29 +32,23 @@ $desktop: 1440px;
             grid-area: content;
         }
     }
-
-    &__message{
+    &__title{
         // layout
-        margin-bottom: 2.4rem;
+        margin-bottom: 2.8rem;
+        
     }
     &__horizontal-line{
-
         &-first{
             @media(min-width: $tablet){
-                // layout
-                margin-top: initial;
-            }
-        }
-        &-last{
-            @media(min-width: $tablet){
-                // layout
-                margin-top: 5.1rem;
+                // remove margin from horizontal line
+                margin: initial;
             }
         }
     }
     &__button{
         // remove cliable area outside button
         justify-self: start;
+
     }
 
 }
