@@ -32,7 +32,15 @@ $desktop: 1440px;
             margin-bottom: 4.8rem;
         }
 
-        
+        @media(min-width: $desktop){
+            // text
+            font-size: 5rem;
+            letter-spacing: 5rem;
+            letter-spacing: -.045rem;
+
+            // layout
+            margin-bottom: 5.3rem;
+        }
     }
     &__call-to-action{
         @media(min-width: $tablet){
