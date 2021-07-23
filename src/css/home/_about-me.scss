@@ -45,7 +45,9 @@ $desktop: 1440px;
     &__title{
         // layout
         margin-bottom: 2.8rem;
-        
+        @media(min-width: $tablet){
+            margin: 5rem 0 2.8rem;
+        }
     }
     &__horizontal-line{
         &-first{
