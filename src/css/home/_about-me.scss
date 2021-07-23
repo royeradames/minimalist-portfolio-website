@@ -7,7 +7,10 @@ $desktop: 1440px;
         // spacing between other articles
     margin: 9.6rem 0 11.5rem;
     @media(min-width: $tablet){
-        
+        // spacing between other articles
+        margin: 9.6rem 0;
+
+        // layout
         grid-template: 
             "img content" 1fr
             / max-content 1fr
