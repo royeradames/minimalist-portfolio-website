@@ -10,14 +10,16 @@ function App() {
   return (
     <main>
       <Router>
-        <Header />
-        <Switch>
-          <Route path="/portfolio">{/* <Home /> */}</Route>
-          <Route path="/contact">{/* <Home /> */}</Route>
-          <Route path="/">
-            <Home />
-          </Route>
-        </Switch>
+        <div className="header-content-wrap">
+          <Header />
+          <Switch>
+            <Route path="/portfolio">{/* <Home /> */}</Route>
+            <Route path="/contact">{/* <Home /> */}</Route>
+            <Route path="/">
+              <Home />
+            </Route>
+          </Switch>
+        </div>
         <Footer />
       </Router>
     </main>
