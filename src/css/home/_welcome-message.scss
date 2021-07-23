@@ -14,7 +14,6 @@ $desktop: 1440px;
     }
 
     &__hero{
-
         // size
         width: 100%;
         @media(min-width: $tablet){
@@ -25,21 +24,30 @@ $desktop: 1440px;
     }
 
     &__title{
+        // layout
         margin-top: 2.4rem;
+        @media(min-width: $tablet){
+            // layout
+            margin-top: initial;
+            margin-bottom: 4.8rem;
+        }
+
+        
     }
     &__call-to-action{
         @media(min-width: $tablet){
-                // decoration
-                background-color: var(--white);
+            // decoration
+            background-color: var(--white);
 
-                // layout
-                padding: 5.6rem 5.6rem 0 0;
-                grid-column: 1;
-                grid-row: 2;
+            // layout
+            padding: 5.6rem 5.6rem 0 0;
+            grid-column: 1;
+            grid-row: 2;
 
-                // size
-                width: 51.4rem;
-                height: 27.8rem;
-            }
+            // size
+            width: 51.4rem;
+            height: 27.8rem;
+        }
+        
     }
 }
