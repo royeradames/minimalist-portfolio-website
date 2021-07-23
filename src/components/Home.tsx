@@ -7,6 +7,7 @@ import homeHeroTable from "../images/homepage/tablet/image-homepage-hero.jpg";
 import homeHeroDesktop from "../images/homepage/desktop/image-homepage-hero.jpg";
 import { ReactComponent as DownArrow } from "../images/icons/down-arrows.svg";
 import { Link } from "react-router-dom";
+import ConctactMeArticle from "./ContactMeArticle";
 
 function Home() {
   const mobileView = "368w";
@@ -73,17 +74,7 @@ function Home() {
             <div className="home__horizontal-line home__horizontal-line-last about-me__horizontal-line about-me__horizontal-line-last" />
           </div>
         </article>
-        <article className="home__contact-me contact-me">
-          <h2 className="home__title contact-me__title">
-            Interested in doing a project together?
-          </h2>
-          <div className="home__horizontal-line contact-me__horizontal-line" />
-          <Link to="contact" className="contact-me__button">
-            <button className="secondary-button secondary-normal ">
-              Contact Me
-            </button>
-          </Link>
-        </article>
+        <ConctactMeArticle />
       </article>
     </>
   );
