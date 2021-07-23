@@ -12,8 +12,13 @@ $desktop: 1440px;
             "logo menu-links social-media" 1fr
             /min-content min-content 1fr
         ;
-        padding: 2.4rem 4rem;
         column-gap: 4.8rem;
+        // increase footer inner spacing
+        padding: 2.4rem 4rem;
+    }
+    @media(min-width: $desktop){
+        // increase footer inner spacing
+        padding: 2.4rem 16.5rem;
     }
 
     // decoration
