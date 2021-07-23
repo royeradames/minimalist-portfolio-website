@@ -1,22 +1,16 @@
-$table: 768px;
+$tablet: 768px;
 $desktop: 1440px;
 
 // general styles
 .home{
-    // layout
-    margin: 3.2rem 3.2rem 8rem ;
-    @media(min-width: $table){
-        margin: 4.7rem 4rem 9.6rem;
-    }
-
+    
     &__title{
         // text
         font-weight: 900;
-        color: var(--gray-blue-900);
         font-size: 4.2rem;
         letter-spacing: -.036rem;
         line-height: 4.2rem;
-        margin-bottom: 3.2rem;
+
     }
 
     &__message{

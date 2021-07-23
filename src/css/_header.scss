@@ -1,4 +1,4 @@
-$table: 768px;
+$tablet: 768px;
 $desktop: 1440px;
 
 .header{
@@ -13,10 +13,6 @@ $desktop: 1440px;
 
     // add spacing between icon and links 
     row-gap: 2.4rem;
-    
-    // add white space away from the edges
-    margin: 3.2rem 3.2rem 0;
-
     
     &__logo{
         // change logo color
@@ -41,7 +37,7 @@ $desktop: 1440px;
         }
 
         // hide icon
-        @media(min-width: $table){
+        @media(min-width: $tablet){
             display: none;
         }
     }
@@ -60,14 +56,14 @@ $desktop: 1440px;
         }
 
         // hide icon
-        @media(min-width: $table){
+        @media(min-width: $tablet){
             display: none;
         }
     }
     &__nav{
         // decoration
         background-color: var(--gray-blue-900);
-        @media(min-width: $table){
+        @media(min-width: $tablet){
             background-color: initial;
         }
 
@@ -75,7 +71,7 @@ $desktop: 1440px;
         position: absolute;
         top: 13%;
         right: 7%;
-        @media(min-width: $table){
+        @media(min-width: $tablet){
             position: initial;
         }
 
@@ -83,7 +79,7 @@ $desktop: 1440px;
         opacity: 0;
         transition: .3s opacity linear;
         z-index: -1;
-        @media(min-width:$table){
+        @media(min-width:$tablet){
             opacity: initial;
             z-index: initial;
         }

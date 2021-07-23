@@ -1,0 +1,13 @@
+$tablet: 768px;
+$desktop: 1440px;
+
+.header-content-wrap{
+    // spacing away form the edges
+    margin: 3.2rem 3.2rem 8rem;
+    @media(min-width: $tablet){
+        margin: 6.4rem 4rem 9.6rem;
+    }
+    @media(min-width: $desktop){
+        margin: 6.4rem 16.5rem 15rem;
+    }
+}
