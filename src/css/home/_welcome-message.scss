@@ -56,6 +56,10 @@ $desktop: 1440px;
             width: 51.4rem;
             height: 27.8rem;
         }
-        
+        @media(min-width: $desktop){
+            // size
+            width: 44.5rem;
+            height: 35.7rem;
+        }
     }
 }
