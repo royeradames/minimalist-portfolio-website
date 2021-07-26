@@ -4,6 +4,12 @@ import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 import * as yup from "yup";
 
+// schema
+const schema = yup.object().shape({
+  name: yup.string().required(),
+  email: yup.string().email().required(),
+  message: yup.string().required().min(10),
+});
 const ContactMe = () => {
   return (
     <article className="contact-page">
