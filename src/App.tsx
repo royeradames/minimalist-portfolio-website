@@ -1,12 +1,14 @@
-import React from "react";
+import React, { useState } from "react";
 import "./css/main.scss";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-
 // components
 import Header from "./components/Header";
-import Footer from "./components/Footer";
 import Home from "./components/Home";
+import Footer from "./components/Footer";
+import Project from "./components/Project";
 function App() {
+  const [project, setProject] = useState("");
+
   return (
     <main className="main-content">
       <Router>
@@ -14,6 +16,10 @@ function App() {
           <Header />
           <Switch>
             <Route path="/portfolio">{/* <Home /> */}</Route>
+            <Route path={`/project-${project}`}>
+              {/* Render the project information base on the project title */}
+              <Project project={project} />
+            </Route>
             <Route path="/contact">{/* <Home /> */}</Route>
             <Route path="/">
               <Home />
