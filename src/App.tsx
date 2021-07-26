@@ -17,7 +17,7 @@ function App() {
           <Header />
           <Switch>
             <Route path="/portfolio">
-              <Portfolio />
+              <Portfolio project={setProject} />
             </Route>
             <Route path={`/project-${project}`}>
               {/* Render the project information base on the project title */}
