@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 // components
 import Header from "./components/Header";
 import Home from "./components/Home";
+import Portfolio from "./components/Portfolio";
 import Footer from "./components/Footer";
 import Project from "./components/Project";
 function App() {
@@ -15,7 +16,9 @@ function App() {
         <div className="header-content-wrap">
           <Header />
           <Switch>
-            <Route path="/portfolio">{/* <Home /> */}</Route>
+            <Route path="/portfolio">
+              <Portfolio />
+            </Route>
             <Route path={`/project-${project}`}>
               {/* Render the project information base on the project title */}
               <Project project={project} />
