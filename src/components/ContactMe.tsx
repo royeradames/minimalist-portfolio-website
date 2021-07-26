@@ -39,6 +39,77 @@ const ContactMe = () => {
         </p>
         <SocialMedia page="contact-message" />
       </article>
+      <article className="contact-form">
+        <div className="horizontal-line contact-form__horizontal-line " />
+        <h2 className="title contact-form__title">Contact Me</h2>
+        <form onSubmit={handleSubmit(onSubmit)} className="contact-form__form">
+          {/* 
+            Name
+            email
+            message
+            submit
+            */}
+          {/* Name */}
+          <div className="form-elements">
+            <label
+              htmlFor="name"
+              className="form-elements__label contact-form__label"
+            >
+              Name
+            </label>
+            <input
+              {...register("name")}
+              className="form-elements__input contact-form__name"
+              placeholder="Jane Appleseed"
+            />
+            <p className="form-elements__error contact-form__error">
+              {errors.name?.message}
+            </p>
+          </div>
+
+          {/* email */}
+          <div className="form-elements">
+            <label
+              htmlFor="email"
+              className="form-elements__label contact-form__label contact-form__label-email"
+            >
+              Email
+            </label>
+            <input
+              {...register("email")}
+              className="form-elements__input contact-form__email "
+              placeholder="email@example.com"
+            />
+            <p className="form-elements__error contact-form__error">
+              {errors.email?.message}
+            </p>
+          </div>
+
+          {/* message */}
+          <div className="form-elements">
+            <label
+              htmlFor="message"
+              className="contact-form__input-label contact-form__label-message"
+            >
+              Message
+            </label>
+            <input
+              {...register("message")}
+              className="form-elements__input  form-elements__input-message"
+              placeholder="How can I help?"
+            />
+            <p className="form-elements__error ">{errors.message?.message}</p>
+          </div>
+
+          {/* submit */}
+          <button
+            type="submit"
+            className=" button button-primary-normal button__text form-elements__submit"
+          >
+            Send Message
+          </button>
+        </form>
+      </article>
     </article>
   );
 };
