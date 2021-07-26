@@ -7,6 +7,7 @@ import Home from "./components/Home";
 import Portfolio from "./components/Portfolio";
 import Footer from "./components/Footer";
 import Project from "./components/Project";
+import ContactMe from "./components/ContactMe";
 function App() {
   const [project, setProject] = useState("");
 
@@ -23,7 +24,9 @@ function App() {
               {/* Render the project information base on the project title */}
               <Project project={project} />
             </Route>
-            <Route path="/contact">{/* <Home /> */}</Route>
+            <Route path="/contact">
+              <ContactMe />
+            </Route>
             <Route path="/">
               <Home />
             </Route>
