@@ -11,6 +11,12 @@ const schema = yup.object().shape({
   message: yup.string().required().min(10),
 });
 const ContactMe = () => {
+  const {
+    register,
+    handleSubmit,
+    formState: { errors },
+  } = useForm({ resolver: yupResolver(schema) });
+
   return (
     <article className="contact-page">
       <article className="contact-message">
