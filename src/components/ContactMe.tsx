@@ -17,6 +17,11 @@ const ContactMe = () => {
     formState: { errors },
   } = useForm({ resolver: yupResolver(schema) });
 
+  const onSubmit = (data: any) => {
+    //   this data can be send with axios to a server
+    console.log(data);
+  };
+
   return (
     <article className="contact-page">
       <article className="contact-message">
