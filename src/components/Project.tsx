@@ -136,7 +136,12 @@ const Project = () => {
       </>
     );
   };
-  return <article className="project"></article>;
+  return (
+    <article className="project">
+      {projectDetails()}
+      <ContactMeArticle page="project" />
+    </article>
+  );
 };
 
 export default Project;
