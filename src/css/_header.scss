@@ -7,13 +7,21 @@ $desktop: 1440px;
     display: grid;
     grid-template:
         "logo menu-icon" min-content
-        "menu-links menu-links" 1fr
         / 1fr 1fr
     ;
 
     // add spacing between icon and links 
     row-gap: 2.4rem;
-    
+
+    margin-bottom: 4rem;
+   
+    @media(min-width: $tablet){
+        // remove row gap when mobile menu is gone
+        row-gap: initial;
+
+        // increase space away from header
+        margin-bottom: 9.4rem;
+    }
     &__logo{
         // change logo color
         fill: var(--gray-blue-900);
