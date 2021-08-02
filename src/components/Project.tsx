@@ -32,6 +32,17 @@ const Project = () => {
     }
     const previousProjectDetail = previousProjectTitleGetter;
 
+    // previous project data
+    let nextProjectTitleGetter;
+    const nextProjectArrayId = currentProjectId;
+    if (nextProjectArrayId < projectsDetail.length) {
+      nextProjectTitleGetter = projectsDetail[nextProjectArrayId];
+    } else {
+      const firstProjectId = 0;
+      nextProjectTitleGetter = projectsDetail[firstProjectId];
+    }
+    const nextProjectDetail = nextProjectTitleGetter;
+
     return <></>;
   };
   return <article className="project"></article>;
