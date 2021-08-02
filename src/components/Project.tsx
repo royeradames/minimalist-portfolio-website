@@ -2,7 +2,9 @@
 import React from "react";
 import { useParams } from "react-router-dom";
 import { Link } from "react-router-dom";
-
+// import data
+import projectsDetail from "../projectsDetail";
+import views from "../viewPortsSize";
 
 
 
