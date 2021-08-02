@@ -27,7 +27,10 @@
             grid-area: input;
             padding: .9rem 1.6rem;
 
-            
+            // decoration
+            border: none;
+            background-color: var(--gray-blue-900-1);
+            color: var(--gray-blue-900-4);
 
             
         }
