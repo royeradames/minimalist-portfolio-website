@@ -21,7 +21,10 @@ $desktop: 1440px;
         // add social-media to icons area
         grid-area: icons;
 
-        
+        &-icon{
+            // make social media icons to var color
+            fill: var(--gray-blue-900);
+        }
     }
     
     &__title{
