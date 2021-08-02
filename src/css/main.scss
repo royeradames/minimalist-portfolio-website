@@ -33,3 +33,7 @@
 @use "./project/previews";
 @use "./project/other-projects";
 
+// contact page
+@use "./contact-page/contact-page";
+@use "./contact-page/contact-message";
+@use "./contact-page//contact-form";
