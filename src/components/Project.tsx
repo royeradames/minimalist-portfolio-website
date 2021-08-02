@@ -5,7 +5,8 @@ import { Link } from "react-router-dom";
 // import data
 import projectsDetail from "../projectsDetail";
 import views from "../viewPortsSize";
-
+// import components
+import ContactMeArticle from "./ContactMeArticle";
 
 
 const Project = (props: { project: string }) => {
