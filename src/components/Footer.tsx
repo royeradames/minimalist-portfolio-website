@@ -11,7 +11,7 @@ function Footer() {
           <Logo className="footer__logo" />
         </Link>
         <Nav footer="footer" />
-        <SocialMedia footer="footer" />
+        <SocialMedia page="footer" />
       </footer>
     </>
   );
