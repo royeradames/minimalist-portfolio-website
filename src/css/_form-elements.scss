@@ -22,7 +22,15 @@
             opacity: .8;
 
         }
-        
+        &__input{
+            // parent layout
+            grid-area: input;
+            padding: .9rem 1.6rem;
+
+            
+
+            
+        }
 
         
     }
