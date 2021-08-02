@@ -24,6 +24,44 @@ const Portfolio = () => {
     }
   };
 
+  const portfolioList = (projectSnipeDetails: DataStructure) => {
+    return projectSnipeDetails.map(
+      (project: {
+        id: number;
+        imgLinkMobile: string;
+        imgLinkTablet: string;
+        imgLinkDesktop: string;
+        title: string;
+        message: string;
+      }) => {
+        return (
+          <article
+            className={`portfolio__project ${pattern(project.id)}`}
+            key={project.id}
+          >
+            <img
+              src={project.imgLinkMobile}
+              srcSet={`${project.imgLinkMobile} ${viewPortsSize.mobile}, ${project.imgLinkTablet} ${viewPortsSize.tablet}, ${project.imgLinkDesktop} ${viewPortsSize.desktop}`}
+              alt={`${project.title} project`}
+              className="portfolio__img"
+            />
+            <div className="horizontal-line portfolio__horizontal-line portfolio__horizontal-line-top" />
+            <h1 className="title portfolio__title">{project.title}</h1>
+            <p className="portfolio__message">{project.message}</p>
+            <Link
+              to={`projects/${project.id}/${project.title}`}
+              className="portfolio__button-link"
+            >
+              <button className="secondary-button secondary-normal portfolio__button">
+                View Project
+              </button>
+            </Link>
+            <div className="horizontal-line portfolio__horizontal-line portfolio__horizontal-line-bottom" />
+          </article>
+        );
+      }
+    );
+  };
   return (
     <article className="portfolio">
       {portfolioList(projectSnipeDetails)}
