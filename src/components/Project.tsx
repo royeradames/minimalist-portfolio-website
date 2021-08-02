@@ -17,6 +17,13 @@ const Project = () => {
   // convert the id from a strin to a number
   const currentProjectId = parseInt(id);
 
+  const projectDetails = () => {
+    // current project data
+    const currentProjectArrayId = currentProjectId - 1;
+    const currentProjectDetail = projectsDetail[currentProjectArrayId];
+
+    return <></>;
+  };
   return <article className="project"></article>;
 };
 
