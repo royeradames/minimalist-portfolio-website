@@ -25,7 +25,7 @@ function Home() {
             className="home__hero welcome-message__hero"
           />
           <div className="welcome-message__call-to-action">
-            <h1 className="home__title welcome-message__title">
+            <h1 className="title home__title welcome-message__title">
               Hey, I’m Alex Spencer and I love building beautiful websites
             </h1>
             <a href="#about">
@@ -52,27 +52,24 @@ function Home() {
             alt="Selfie"
             className="home__selfie about-me__selfie"
           />
-          <div className="about-me__content">
-            <div className="home__horizontal-line home__horizontal-line-first about-me__horizontal-line about-me__horizontal-line-first" />
-            <h2 className="home__title about-me__title">About Me</h2>
-            <p className="home__message about-me__message">
-              I’m a junior front-end developer looking for a new role in an
-              exciting company. I focus on writing accessible HTML, using modern
-              CSS practices and writing clean JavaScript. When writing
-              JavaScript code, I mostly use React, but I can adapt to whatever
-              tools are required. I’m based in London, UK, but I’m happy working
-              remotely and have experience in remote teams. When I’m not coding,
-              you’ll find me outdoors. I love being out in nature whether that’s
-              going for a walk, run or cycling. I’d love you to check out my
-              work.
-            </p>
-            <Link to="/portfolio" className="about-me__button">
-              <button className="secondary-button secondary-normal ">
-                go to portfolio
-              </button>
-            </Link>
-            <div className="home__horizontal-line home__horizontal-line-last about-me__horizontal-line about-me__horizontal-line-last" />
-          </div>
+          <div className="horizontal-line horizontal-line-first about-me__horizontal-line about-me__horizontal-line-top" />
+          <h2 className="title home__title about-me__title">About Me</h2>
+          <p className="home__message about-me__message">
+            I’m a junior front-end developer looking for a new role in an
+            exciting company. I focus on writing accessible HTML, using modern
+            CSS practices and writing clean JavaScript. When writing JavaScript
+            code, I mostly use React, but I can adapt to whatever tools are
+            required. I’m based in London, UK, but I’m happy working remotely
+            and have experience in remote teams. When I’m not coding, you’ll
+            find me outdoors. I love being out in nature whether that’s going
+            for a walk, run or cycling. I’d love you to check out my work.
+          </p>
+          <Link to="/portfolio" className="about-me__button-link">
+            <button className="secondary-button secondary-normal ">
+              go to portfolio
+            </button>
+          </Link>
+          <div className="horizontal-line horizontal-line-last about-me__horizontal-line about-me__horizontal-line-bottom" />
         </article>
         <ConctactMeArticle />
       </article>
