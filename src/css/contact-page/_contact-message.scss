@@ -13,5 +13,23 @@ $desktop: 1440px;
     row-gap: 2.4rem;
 
     
+    &__horizontal-line{
+        // add horiozontal-line to line area
+        grid-area: line;
+    }
+    &__social-media{
+        // add social-media to icons area
+        grid-area: icons;
+
+        
+    }
     
+    &__title{
+        // add title to title area
+        grid-area: title;
+    }
+    &__message{
+        // add message to message area
+        grid-area: message;
+    }
 }
