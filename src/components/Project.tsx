@@ -45,7 +45,7 @@ const Project = () => {
 
     return (
       <>
-        {/* unpack params identify project data for rendering */}
+        {/* unpack project data identify by params */}
         <img
           src={currentProjectDetail.heroMobile}
           srcSet={`${currentProjectDetail.heroMobile} ${views.mobile}, ${currentProjectDetail.heroTablet} ${views.tablet}, ${currentProjectDetail.heroDesktop} ${views.desktop}`}
