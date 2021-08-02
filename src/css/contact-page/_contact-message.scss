@@ -1,0 +1,17 @@
+$desktop: 1440px;
+.contact-message{
+    // add mobile layout
+    display: grid;
+    grid-template:
+        "line" min-content
+        "title" min-content
+        "message" 1fr
+        "icons" min-content
+        / 1fr
+    ;
+    // add white space
+    row-gap: 2.4rem;
+
+    
+    
+}
