@@ -92,6 +92,47 @@ const Project = () => {
             className="previews__preview-2"
           />
         </article>
+        <article className="project__others-project other-project">
+          {/* Link to previous and next projects on the project list */}
+          <Link
+            to={`/projects/${previousProjectDetail.id}/${previousProjectDetail.title}`}
+            className="other-project__previous-project-link"
+            onClick={() => {
+              window.scroll(0, 0);
+            }}
+          >
+            <button className="other-project__previous-project other-project__button">
+              <LeftArrow className="other-project__button-icon other-project__previous-project-icon" />
+              <h2
+                className="project__title
+              other-project__button-title
+              other-project__previous-project-title "
+              >
+                {previousProjectDetail.title}
+              </h2>
+              <h2 className="other-project__label other-project__button-label other-project__previous-project-label">
+                Previous Project
+              </h2>
+            </button>
+          </Link>
+          <Link
+            to={`/projects/${nextProjectDetail.id}/${nextProjectDetail.title}`}
+            className="other-project__next-project-link"
+            onClick={() => {
+              window.scroll(0, 0);
+            }}
+          >
+            <button className="other-project__next-project other-project__button">
+              <RightArrow className="other-project__button-icon other-project__next-project-icon" />
+              <h2 className="project__title other-project__button-title other-project__next-project-title ">
+                {nextProjectDetail.title}
+              </h2>
+              <h2 className="other-project__label other-project__button-label other-project__next-project-label">
+                Next Project
+              </h2>
+            </button>
+          </Link>
+        </article>
       </>
     );
   };
