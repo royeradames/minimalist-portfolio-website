@@ -1,0 +1,15 @@
+.form-elements{
+        // layout
+        display: grid;
+        grid-template:
+            "label" min-content
+            "input" 1fr
+            / 1fr
+        ;
+        row-gap: .8rem;
+
+        
+        
+
+        
+    }
