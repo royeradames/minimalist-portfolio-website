@@ -25,5 +25,9 @@ $desktop: 1440px;
         // parent layout
         grid-area: form;
 
+        // layout
+        display: grid;
+        grid-template: 1fr/1fr;
+        row-gap: 2.4rem;
     }
 }
