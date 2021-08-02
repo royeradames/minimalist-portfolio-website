@@ -14,6 +14,16 @@ type DataStructure = {
   imgLinkDesktop: string;
 }[];
 const Portfolio = () => {
+  const pattern = (id: number) => {
+    const even = id % 2 === 0;
+    if (even) {
+      return "portfolio__project-even-pattern";
+    } else {
+      // odd
+      return "portfolio__project-odd-pattern";
+    }
+  };
+
   return (
     <article className="portfolio">
       {portfolioList(projectSnipeDetails)}
