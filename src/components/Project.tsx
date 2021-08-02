@@ -14,6 +14,8 @@ import { ReactComponent as RightArrow } from "../images/icons/arrow-right.svg";
 const Project = () => {
   // get url params to identify the project
   const { id, title } = useParams<{ id: string; title: string }>();
+  // convert the id from a strin to a number
+  const currentProjectId = parseInt(id);
 
   return <article className="project"></article>;
 };
