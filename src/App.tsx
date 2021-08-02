@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import "./css/main.scss";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 // components
@@ -8,9 +8,8 @@ import Portfolio from "./components/Portfolio";
 import Footer from "./components/Footer";
 import Project from "./components/Project";
 import ContactMe from "./components/ContactMe";
-function App() {
-  const [project, setProject] = useState("");
 
+function App() {
   return (
     <main className="main-content">
       <Router>
@@ -18,11 +17,11 @@ function App() {
           <Header />
           <Switch>
             <Route path="/portfolio">
-              <Portfolio project={setProject} />
+              <Portfolio />
             </Route>
-            <Route path={`/project-${project}`}>
+            <Route path="/projects/:id/:title">
               {/* Render the project information base on the project title */}
-              <Project project={project} />
+              <Project />
             </Route>
             <Route path="/contact">
               <ContactMe />
