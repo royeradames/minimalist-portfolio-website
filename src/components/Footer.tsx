@@ -7,7 +7,16 @@ function Footer() {
   return (
     <>
       <footer className="footer">
-        <Link to="/">
+        <Link
+          to="/"
+          onClick={() => {
+            window.scroll({
+              top: 0,
+              left: 0,
+              behavior: "smooth",
+            });
+          }}
+        >
           <Logo className="footer__logo" />
         </Link>
         <Nav footer="footer" />
