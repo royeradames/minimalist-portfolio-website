@@ -11,7 +11,11 @@ import ContactMeArticle from "./ContactMeArticle";
 import { ReactComponent as LeftArrow } from "../images/icons/arrow-left.svg";
 import { ReactComponent as RightArrow } from "../images/icons/arrow-right.svg";
 
-const Project = (props: { project: string }) => {
-  return <article className="project">Project {props.project}</article>;
+const Project = () => {
+  // get url params to identify the project
+  const { id, title } = useParams<{ id: string; title: string }>();
+
+  return <article className="project"></article>;
+};
 
 export default Project;
