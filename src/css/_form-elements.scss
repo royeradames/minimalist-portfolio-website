@@ -45,7 +45,9 @@
         // remove icon space
         grid-template: initial;
 
-        
+        // get button on row
+        grid-column: 1;
+        grid-row: 4;
 
         
     }
