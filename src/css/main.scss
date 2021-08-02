@@ -26,5 +26,10 @@
 // portfolio
 @use "./portfolio/portfolio";
 
-
+// project
+@use "./project/project";
+@use "./project/intro";
+@use "./project/background";
+@use "./project/previews";
+@use "./project/other-projects";
 
