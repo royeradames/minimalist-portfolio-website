@@ -7,7 +7,13 @@ const ContactMeArticle = (props: { page: string }) => {
         Interested in doing a project together?
       </h2>
       <div className="horizontal-line contact-me__horizontal-line" />
-      <Link to="/contact">
+      <Link
+        to="/contact"
+        className="contact-me__button"
+        onClick={() => {
+          window.scroll(0, 0);
+        }}
+      >
         <button className="secondary-button secondary-normal ">
           Contact Me
         </button>
