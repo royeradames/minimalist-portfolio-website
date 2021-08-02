@@ -1,10 +1,10 @@
 @use "./global";
-@use "./root";
 @use "./header-content-wrap";
 @use "./nav";
 @use "./social-media";
 @use "./header";
 @use "./footer";
+
 
 // button
 @use "./button/button";
@@ -14,9 +14,16 @@
 @use "./button/secondary-normal";
 @use "./button/secondary-disable";
 
+// form elements
+@use "./form-elements";
+
 // home styles
 @use "./home/home";
 @use "./home/welcome-message";
 @use "./home/about-me";
 @use "./home/contact-me";
+
+
+
+
 
