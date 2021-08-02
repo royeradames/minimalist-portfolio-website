@@ -8,7 +8,15 @@
         ;
         row-gap: .8rem;
 
-        
+        &__label{
+            // parent layout
+            grid-area: label;
+            
+            
+
+            
+
+        }
         
 
         
