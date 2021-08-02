@@ -1,0 +1,29 @@
+$desktop: 1440px;
+
+.contact-form{
+    // layout
+    display: grid;
+    grid-template:
+        "." 3.2rem
+        "horizontal-line" min-content
+        "title" min-content
+        "form" 1fr
+        / 1fr
+    ;
+    row-gap: 3.2rem;
+
+    &__horizontal-line{
+        // layout
+        grid-area: horizontal-line;
+
+    }
+    &__title{
+        // layout
+        grid-area: title;
+    }
+    &__form{
+        // parent layout
+        grid-area: form;
+
+    }
+}
