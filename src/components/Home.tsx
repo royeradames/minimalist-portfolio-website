@@ -71,7 +71,7 @@ function Home() {
           </Link>
           <div className="horizontal-line horizontal-line-last about-me__horizontal-line about-me__horizontal-line-bottom" />
         </article>
-        <ConctactMeArticle />
+        <ConctactMeArticle page="home" />
       </article>
     </>
   );
