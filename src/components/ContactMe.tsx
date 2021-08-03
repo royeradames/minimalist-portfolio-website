@@ -25,7 +25,7 @@ const ContactMe = () => {
   return (
     <article className="contact-page">
       <article className="contact-message">
-        <div className="horizontal-line contact-message__horizontal-line contact-message__horizontal-line-first" />
+        <div className="horizontal-line contact-message__horizontal-line " />
         <h2 className="title contact-message__title">Get in Touch</h2>
         <p className="message-s contact-message__message">
           I’d love to hear about what you’re working on and how I could help.
