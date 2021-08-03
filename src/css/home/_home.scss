@@ -3,9 +3,11 @@ $desktop: 1440px;
 
 // general styles
 .home{
+    //keep articles separate
+    display: grid; 
     
-    
-   
+    // separate articles
+    row-gap: 9.6rem;
 
    
     
