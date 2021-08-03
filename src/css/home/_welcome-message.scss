@@ -34,7 +34,9 @@ $desktop: 1440px;
         // parent layout: white background and img 
         grid-area: content;
 
-        
+        // children layout
+        display: grid;
+        row-gap: 3.2rem;
         
         @media(min-width: $tablet){
             // decoration
