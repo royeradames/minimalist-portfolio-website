@@ -31,7 +31,8 @@ $desktop: 1440px;
         }
     }
     &__call-to-action{
-        
+        // parent layout: white background and img 
+        grid-area: content;
 
         
         
