@@ -13,7 +13,10 @@ $desktop: 1440px;
         // increase white space to separate articles
         row-gap: 9.6rem;
     }
-    
+    @media(min-width: $desktop){
+        // increase white space to separate articles
+        row-gap: 15rem;
+    }
     
     &__message{
         // text
