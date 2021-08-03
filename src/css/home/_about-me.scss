@@ -4,67 +4,81 @@ $desktop: 1440px;
 .about-me{
     // layout
     display: grid;
-        // spacing between other articles
-    margin: 9.6rem 0 11.5rem;
+    grid-template:
+        "img" max-content
+        "." 3.2rem
+        "line-top" min-content
+        "." 3.2rem
+        "title" max-content
+        "." 2.8rem
+        "message" max-content
+        "." 2.4rem
+        "button" min-content
+        "." 5.1rem
+        "line-bottom" min-content
+    ;
     @media(min-width: $tablet){
-        // spacing between other articles
-        margin: 9.6rem 0;
-
         // layout
-        grid-template: 
-            "img content" 1fr
-            / max-content 1fr
+        grid-template:
+            "img line-top" min-content
+            "img ." 5rem
+            "img title" max-content
+            "img ." 2.8rem
+            "img message" max-content
+            "img ." 2.4rem
+            "img button" max-content
+            "img ." 4.6rem
+            "img line-bottom" min-content
+            / 1fr 1fr
         ;
         column-gap: 6.9rem;
     }
     @media(min-width: $desktop){
-        // spacing between other articles
-        margin: 15rem 0;
-
         // layout
         column-gap: 12.5rem;
         width: 101.5rem;
+        grid-template:
+            "img line-top" min-content
+            "img ." 5rem
+            "img title" max-content
+            "img ." 2.8rem
+            "img message" max-content
+            "img ." 2.4rem
+            "img button" max-content
+            "img ." 4.6rem
+            "img line-bottom" min-content
+            / 1fr 35rem
+        ;
     }
     &__selfie{
         // center image
         justify-self: center;
 
-        @media(min-width: $tablet){
-            // layout
-            grid-area: img;
-        }
-
+        // layout
+        grid-area: img;
     }
 
-    &__content{
-        @media(min-width: $tablet){
-            // layout
-            grid-area: content;
-        }
-    }
     &__title{
         // layout
-        margin-bottom: 2.8rem;
-        @media(min-width: $tablet){
-            margin: 5rem 0 2.8rem;
-        }
+        grid-area: title;
+    }
+    &__message{
+        grid-area: message;
     }
     &__horizontal-line{
-        &-first{
-            @media(min-width: $tablet){
-                // remove margin from horizontal line
-                margin: initial;
-            }
+        &-top{
+            grid-area: line-top;
+        }
+        &-bottom{
+            grid-area: line-bottom;
         }
     }
-    &__button{
-        // remove cliable area outside button
-        justify-self: start;
-
+    &__button-link{
         // layout
-            //display allows for margin to apply 
-        display: inline-block;
-        margin: 2.4rem 0 4.6rem;
+        grid-area: button;
+
+        // fix button link covering all of the button area
+        justify-self: start;
     }
 
 }
