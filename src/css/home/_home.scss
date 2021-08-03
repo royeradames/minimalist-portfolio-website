@@ -9,7 +9,10 @@ $desktop: 1440px;
     // separate articles
     row-gap: 9.6rem;
 
-   
+    @media(min-width: $tablet){
+        // increase white space to separate articles
+        row-gap: 9.6rem;
+    }
     
     
     &__message{
