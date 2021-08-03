@@ -4,40 +4,18 @@ $desktop: 1440px;
 // general styles
 .home{
     
-    &__title{
-        // text
-        font-weight: 900;
-        font-size: 4.2rem;
-        letter-spacing: -.036rem;
-        line-height: 4.2rem;
+    
+   
 
-        // spacing
-        margin-bottom: 3.2rem;
-
-        // decoration
-        color: var(--gray-blue-900);
-        
-    }
-
+   
+    
+    
     &__message{
         // text
         font-size: 1.6rem;
         line-height: 3rem;
         color: var(--gray-blue-900);
         opacity: .8;
-    }
-
-    &__horizontal-line {
-        // show horizontal line
-        border: .1rem solid var(--gray-blue-900);
-        background-color: var(--gray-blue-900);
-        opacity: .15;
-        
-        // add spacing to each line
-        &-first{
-            margin: 3.2rem 0;
-        }
-            
     }
 
 }
