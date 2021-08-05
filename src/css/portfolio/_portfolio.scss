@@ -9,6 +9,11 @@ $desktop: 1440px;
         // add more space between projects
         row-gap: 8rem;
     }
+    &__contact-me{
+        // add extra white space
+        margin-top: .8rem; // + row-gap 7.2rem = total 8rem white space
+        
+    }
 
     
 
