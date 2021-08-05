@@ -35,8 +35,28 @@ $desktop: 1440px;
             "." 2.4rem
             "line-bottom" min-content
         ;
+        @media(min-width: $tablet){
+            column-gap: 6.9rem;
+        }
         
-        
+        &-odd-pattern{
+            // layout
+            @media(min-width: $tablet){
+                grid-template:
+                    "img line-top" min-content
+                    "img ." 3.2rem
+                    "img title" max-content
+                    "img ." 2.9rem
+                    "img message" max-content
+                    "img ." 3.5rem
+                    "img button" max-content
+                    "img ." 5rem
+                    "img line-bottom" min-content
+                    / 1fr 1fr
+                ;
+            }
+            
+        }
         
     }
     &__img{
