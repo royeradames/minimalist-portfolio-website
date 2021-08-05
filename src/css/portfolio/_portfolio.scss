@@ -5,7 +5,10 @@ $desktop: 1440px;
     // layout
     display: grid;
     row-gap: 7.2rem;
-    
+    @media(min-width: $tablet){
+        // add more space between projects
+        row-gap: 8rem;
+    }
 
     
 
