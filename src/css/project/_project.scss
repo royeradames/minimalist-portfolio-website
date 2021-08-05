@@ -1,0 +1,23 @@
+$desktop: 1440px;
+
+.project{
+    // small layout
+    display: grid;
+    grid-template:
+        "hero" max-content
+        "." 4rem //white space
+        "manage" max-content
+        "." 4.8rem //white space
+        "background-article" max-content
+        "." 4rem //white space
+        "previews" max-content
+        "." 6.4rem // white space
+        "others" 1fr
+        "." 6.4rem // white space
+        "contact-me" max-content
+    ;
+    
+    
+
+    
+}
