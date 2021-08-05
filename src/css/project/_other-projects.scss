@@ -71,5 +71,13 @@
         
     }
 
-    
+    &__label{
+        // text
+        font-size: 1.6rem;
+        line-height: 3rem;
+
+        // decoration
+        color: var(--gray-blue-900);
+        opacity: .5;
+    }
 }
