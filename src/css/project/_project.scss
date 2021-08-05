@@ -17,7 +17,31 @@ $desktop: 1440px;
         "contact-me" max-content
     ;
     
-    
+    &__hero{
+        // layout: add element to grid area, and center image
+        grid-area: hero;
+        justify-self: center;
+    }
+    &__intro{
+        // layout: add element to grid area
+        grid-area: manage;
+    }
+    &__background{
+        // layout: add element to grid area
+        grid-area: background-article;
+    }
+    &__previews{
+        // layout: add element to grid area
+        grid-area: previews;
+    }
+    &__others-project{
+        // layout: add element to grid area
+        grid-area: others;
+    }
+    &__contact-me{
+        // layout: add element to grid area
+        grid-area: contact-me;
+    }
 
     
 }
