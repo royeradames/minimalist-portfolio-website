@@ -19,7 +19,26 @@ $desktop: 1440px;
             margin-top: 7rem; // + row-gap 8rem = total 15rem white space
         }
     }
-    
+    &__project{
+        // layout
+        display: grid;
+        grid-template: 
+            "img" max-content
+            "." 3.2rem
+            "line-top" min-content
+            "." 2.4rem
+            "title" max-content
+            "." 2.4rem
+            "message" max-content
+            "." 2.4rem
+            "button" min-content
+            "." 2.4rem
+            "line-bottom" min-content
+        ;
+        
+        
+        
+    }
     &__img{
         // parent layout: add element to grid area
         grid-area: img;
