@@ -48,34 +48,34 @@ $desktop: 1440px;
     }
     &__horizontal-line{
         &-top{
-            // layout
+            // layout: add element to grid area
             grid-area: line-top;
         }
         &-bottom{
-            // layout
+            // layout: add element to grid area
             grid-area: line-bottom;
         }
     }
     &__title{
-        // layout
+        // layout: add element to grid area
         grid-area: title;
     }
     &__message{
-        // layout
+        // layout: add element to grid area
         grid-area: message;
     }
     &__job-title-tech-stack{
-        // layout
+        // layout: add element to grid area
         grid-area: job-tech-stack;
+        
+        // text styles
         color: var(--green);
-
-        // text
         font-size: 1.3rem;
         font-weight: bold;
         line-height: 3rem;
     }
     &__button{
-        // layout
+        // layout: add element to grid area
         grid-area: button;
     }
 }
