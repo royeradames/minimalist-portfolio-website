@@ -50,6 +50,8 @@ $desktop: 1440px;
             // parent layout
             grid-area: button;
 
+            // make link area wrap the button only
+            justify-self: start;
         }
     }
     &__horizontal-line{
