@@ -32,11 +32,18 @@
             background-color: var(--gray-blue-900-1);
             color: var(--gray-blue-900-4);
 
+            &:active, &:focus{
+                // when inputing make input border green
+                border: .1rem solid var(--green);
+            }
+
             &-message{
                 // size
                 padding-bottom: 15.2rem;
             }
+
         }
+       
 
         &__submit{
         // center text
