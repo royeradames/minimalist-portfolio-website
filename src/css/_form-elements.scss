@@ -49,7 +49,10 @@
                 color: var(--red);
                 text-transform: capitalize;
             }
-            
+            &-input{
+                // when there is an error high input red
+                border: .1rem solid var(--red);
+            }
         }
 
         &__submit{
