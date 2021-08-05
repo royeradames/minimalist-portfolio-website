@@ -36,7 +36,12 @@ $desktop: 1440px;
     &__job-title-tech-stack{
         // layout
         grid-area: job-tech-stack;
-        
+        color: var(--green);
+
+        // text
+        font-size: 1.3rem;
+        font-weight: bold;
+        line-height: 3rem;
     }
     &__button{
         // layout
