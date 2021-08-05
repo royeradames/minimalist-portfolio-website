@@ -32,6 +32,8 @@ $desktop: 1440px;
         // parent layout: add element to grid area
         grid-area: title;
 
+        // Capitalize the lower case title
+        text-transform: capitalize;
     }
     &__message{
         // parent layout: add element to grid area
