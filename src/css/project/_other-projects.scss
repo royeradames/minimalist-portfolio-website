@@ -34,7 +34,21 @@
             grid-area: label;
         }
     }
-    
+    &__previous-project{
+        // layout
+        
+        text-align: left;
+
+        // decoration
+        border-left: none;
+        &-link{
+            // layout
+            grid-area: previous;
+
+            // stretch button full area
+            display: inherit;
+        }
+    }
     
 
     
