@@ -15,4 +15,31 @@ $desktop: 1440px;
     ;
   
     
+    &__horizontal-line{
+        &-top{
+            // layout
+            grid-area: line-top;
+        }
+        &-bottom{
+            // layout
+            grid-area: line-bottom;
+        }
+    }
+    &__title{
+        // layout
+        grid-area: title;
+    }
+    &__message{
+        // layout
+        grid-area: message;
+    }
+    &__job-title-tech-stack{
+        // layout
+        grid-area: job-tech-stack;
+        
+    }
+    &__button{
+        // layout
+        grid-area: button;
+    }
 }
