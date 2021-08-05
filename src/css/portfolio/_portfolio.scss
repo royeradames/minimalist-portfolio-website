@@ -39,7 +39,11 @@ $desktop: 1440px;
         // parent layout: add element to grid area
         grid-area: message;
 
-        
+        // text: size, spacing, and color
+        font-size: 1.5rem;
+        line-height: 3rem;
+        color: var(--gray-blue-900);
+        opacity: .8;
     }
     &__button{
         &-link{
