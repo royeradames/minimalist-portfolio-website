@@ -19,6 +19,40 @@ $desktop: 1440px;
             margin-top: 7rem; // + row-gap 8rem = total 15rem white space
         }
     }
+    
+    &__img{
+        // parent layout: add element to grid area
+        grid-area: img;
+
+    }
+    &__title{
+        // parent layout: add element to grid area
+        grid-area: title;
+
+    }
+    &__message{
+        // parent layout: add element to grid area
+        grid-area: message;
+
+        
+    }
+    &__button{
+        &-link{
+            // parent layout
+            grid-area: button;
+
+        }
+    }
+    &__horizontal-line{
+        &-top{
+            // parent layout
+            grid-area: line-top;
+        }
+        &-bottom{
+            // parent layout
+            grid-area: line-bottom;
+        }
+    }
 
     
 
