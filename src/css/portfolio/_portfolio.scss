@@ -72,7 +72,24 @@ $desktop: 1440px;
                 ;
             }
         }
-        
+        &-even-pattern{
+            // layout
+            @media(min-width: $tablet){
+                grid-template:
+                    "line-top img" min-content
+                    ". img" 3.2rem
+                    "title img" max-content
+                    ". img" 2.9rem
+                    "message img" max-content
+                    ". img" 3.5rem
+                    "button img" max-content
+                    ". img" 5rem
+                    "line-bottom img" min-content
+                    / 1fr 1fr
+                ;
+            }
+           
+        }
     }
     &__img{
         // parent layout: add element to grid area
