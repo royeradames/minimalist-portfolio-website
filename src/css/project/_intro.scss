@@ -13,7 +13,24 @@ $desktop: 1440px;
         "button" min-content
         "line-bottom" min-content
     ;
-  
+    @media(min-width: $tablet){
+        // have empty areas has white space
+        row-gap: initial;
+
+        // tablet layout
+        grid-template:
+            "line-top line-top" min-content
+            ". ." 3.2rem
+            "title message" max-content 
+            ". message" 1.6rem
+            "job-tech-stack  message" max-content
+            ". message" 1.6rem
+            "button message" min-content
+            ". message" 3.2rem
+            "line-bottom line-bottom" min-content
+            / 1fr 1fr
+        ;
+    }
     
     &__horizontal-line{
         &-top{
