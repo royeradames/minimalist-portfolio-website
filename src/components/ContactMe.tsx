@@ -59,10 +59,12 @@ const ContactMe = () => {
             </label>
             <input
               {...register("name")}
-              className="form-elements__input contact-form__name"
+              className={`form-elements__input contact-form__name ${
+                errors.name ? "form-elements__error-input" : ""
+              }`}
               placeholder="Jane Appleseed"
             />
-            <p className="form-elements__error contact-form__error">
+            <p className="form-elements__error-message">
               {errors.name?.message}
             </p>
           </div>
@@ -77,10 +79,12 @@ const ContactMe = () => {
             </label>
             <input
               {...register("email")}
-              className="form-elements__input contact-form__email "
+              className={`form-elements__input contact-form__email ${
+                errors.email ? "form-elements__error-input" : ""
+              }`}
               placeholder="email@example.com"
             />
-            <p className="form-elements__error contact-form__error">
+            <p className="form-elements__error-message ">
               {errors.email?.message}
             </p>
           </div>
@@ -89,16 +93,20 @@ const ContactMe = () => {
           <div className="form-elements">
             <label
               htmlFor="message"
-              className="contact-form__input-label contact-form__label-message"
+              className={`contact-form__input-label contact-form__label-message `}
             >
               Message
             </label>
             <input
               {...register("message")}
-              className="form-elements__input  form-elements__input-message"
+              className={`form-elements__input  form-elements__input-message ${
+                errors.message ? "form-elements__error-input" : ""
+              }`}
               placeholder="How can I help?"
             />
-            <p className="form-elements__error ">{errors.message?.message}</p>
+            <p className="form-elements__error-message ">
+              {errors.message?.message}
+            </p>
           </div>
 
           {/* submit */}
