@@ -88,7 +88,20 @@ $desktop: 1440px;
                     / 1fr 1fr
                 ;
             }
-           
+            @media(min-width: $desktop){
+                grid-template:
+                    "line-top img" min-content
+                    ". img" 10.3rem
+                    "title img" max-content
+                    ". img" 2.8rem
+                    "message img" max-content
+                    ". img" 2.4rem
+                    "button img" max-content
+                    ". img" 10.3rem
+                    "line-bottom img" min-content
+                    / 1fr 1fr
+                ;
+            }
         }
     }
     &__img{
