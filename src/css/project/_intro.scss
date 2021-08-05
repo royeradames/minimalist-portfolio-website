@@ -2,9 +2,8 @@ $tablet: 768px;
 $desktop: 1440px;
 
 .intro{
-    // layout
+    // sm layout
     display: grid;
-    row-gap: 2.4rem;
     grid-template:
         "line-top" min-content
         "title" max-content 
@@ -13,6 +12,8 @@ $desktop: 1440px;
         "button" min-content
         "line-bottom" min-content
     ;
+    // white space
+    row-gap: 2.4rem;
     @media(min-width: $tablet){
         // have empty areas has white space
         row-gap: initial;
