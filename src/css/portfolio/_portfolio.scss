@@ -12,7 +12,12 @@ $desktop: 1440px;
     &__contact-me{
         // add extra white space
         margin-top: .8rem; // + row-gap 7.2rem = total 8rem white space
-        
+        @media(min-width:$tablet){
+            margin-top: 1.6rem; // + row-gap 8rem = total 9.6rem white space
+        }
+        @media(min-width:$desktop){
+            margin-top: 7rem; // + row-gap 8rem = total 15rem white space
+        }
     }
 
     
