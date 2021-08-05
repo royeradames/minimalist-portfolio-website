@@ -6,7 +6,34 @@
         / 1fr 1fr
     ;
 
-    
+    &__button{
+        // decoration
+        background: none;
+        border: .1rem solid var(--gray-blue-900-15);
+        cursor: pointer;
+
+        // children layout
+        display: grid;
+        grid-template:
+            "." 2.4rem
+            "icon" min-content
+            "." 1.6rem
+            "title" max-content
+            "label" max-content
+        ;
+        &-icon{
+            // layout
+            grid-area: icon;
+        }
+        &-title{
+            // layout
+            grid-area: title;
+        }
+        &-label{
+            // layout
+            grid-area: label;
+        }
+    }
     
     
 
