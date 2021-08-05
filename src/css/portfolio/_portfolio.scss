@@ -24,6 +24,9 @@ $desktop: 1440px;
         // parent layout: add element to grid area
         grid-area: img;
 
+        // center image
+        align-self: center;
+        justify-self: center;
     }
     &__title{
         // parent layout: add element to grid area
