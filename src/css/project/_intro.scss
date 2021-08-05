@@ -31,7 +31,21 @@ $desktop: 1440px;
             / 1fr 1fr
         ;
     }
-    
+    @media(min-width: $desktop){
+        grid-template:
+        "line-top" min-content
+        "." 4.8rem
+        "title" max-content 
+        "." 2.9rem
+        "message" max-content
+        "." 2.3rem
+        "job-tech-stack" max-content
+        "." 1.6rem
+        "button" min-content
+        "." 3.2rem
+        "line-bottom" min-content
+        ;
+    }
     &__horizontal-line{
         &-top{
             // layout
