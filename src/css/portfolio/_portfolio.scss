@@ -36,14 +36,17 @@ $desktop: 1440px;
             "line-bottom" min-content
         ;
         @media(min-width: $tablet){
+            // have space between image and text
             column-gap: 6.9rem;
         }
         @media(min-width: $desktop){
+            // increase white space of img and text
             column-gap: 12.5rem;
         }
         &-odd-pattern{
             // layout
             @media(min-width: $tablet){
+                // odd number projects have img to the left
                 grid-template:
                     "img line-top" min-content
                     "img ." 3.2rem
@@ -58,6 +61,7 @@ $desktop: 1440px;
                 ;
             }
             @media(min-width: $desktop){
+                // increase white space
                 grid-template:
                     "img line-top" min-content
                     "img ." 10.3rem
@@ -75,6 +79,7 @@ $desktop: 1440px;
         &-even-pattern{
             // layout
             @media(min-width: $tablet){
+                // even number projects have img to the right
                 grid-template:
                     "line-top img" min-content
                     ". img" 3.2rem
@@ -89,6 +94,7 @@ $desktop: 1440px;
                 ;
             }
             @media(min-width: $desktop){
+                // increase white space
                 grid-template:
                     "line-top img" min-content
                     ". img" 10.3rem
