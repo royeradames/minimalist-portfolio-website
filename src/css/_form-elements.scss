@@ -43,7 +43,14 @@
             }
 
         }
-       
+        &__error{
+            &-message{
+                // text: error messages are red and capitalize
+                color: var(--red);
+                text-transform: capitalize;
+            }
+            
+        }
 
         &__submit{
         // center text
