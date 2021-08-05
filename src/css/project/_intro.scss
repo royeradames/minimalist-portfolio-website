@@ -1,0 +1,18 @@
+$tablet: 768px;
+$desktop: 1440px;
+
+.intro{
+    // layout
+    display: grid;
+    row-gap: 2.4rem;
+    grid-template:
+        "line-top" min-content
+        "title" max-content 
+        "message" max-content
+        "job-tech-stack" max-content
+        "button" min-content
+        "line-bottom" min-content
+    ;
+  
+    
+}
