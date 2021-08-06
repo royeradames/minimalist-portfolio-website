@@ -4,19 +4,38 @@ This is a solution to the [Minimalist portfolio website challenge on Frontend Me
 
 ## Table of contents
 
-- [Overview](#overview)
-  - [The challenge](#the-challenge)
-  - [Screenshot](#screenshot)
-  - [Links](#links)
-- [My process](#my-process)
-  - [Built with](#built-with)
-  - [What I learned](#what-i-learned)
-  - [Continued development](#continued-development)
-  - [Useful resources](#useful-resources)
-- [Author](#author)
-- [Acknowledgments](#acknowledgments)
-
-**Note: Delete this note and update the table of contents based on what sections you keep.**
+- [Frontend Mentor - Minimalist portfolio website solution](#frontend-mentor---minimalist-portfolio-website-solution)
+  - [Table of contents](#table-of-contents)
+  - [Overview](#overview)
+    - [The challenge](#the-challenge)
+    - [Screenshot](#screenshot)
+      - [Home Page](#home-page)
+        - [Home Mobile](#home-mobile)
+        - [Home Tablet](#home-tablet)
+        - [Home Desktop](#home-desktop)
+      - [Portfolio Page](#portfolio-page)
+        - [Portfolio Mobile](#portfolio-mobile)
+        - [Portfolio Tablet](#portfolio-tablet)
+        - [Portfolio Desktop](#portfolio-desktop)
+      - [A specific project Template Page](#a-specific-project-template-page)
+        - [Mobile Project Template Page](#mobile-project-template-page)
+        - [Tablet Project Template Page](#tablet-project-template-page)
+        - [Desktop Project Template Page](#desktop-project-template-page)
+      - [Contact-me Page](#contact-me-page)
+        - [Mobile Contact-me Page](#mobile-contact-me-page)
+        - [Tablet Contact-me Page](#tablet-contact-me-page)
+        - [Desktop Contact-me Page](#desktop-contact-me-page)
+      - [Mobile Menu](#mobile-menu)
+      - [Contact-me Form Error](#contact-me-form-error)
+    - [Links](#links)
+  - [My process](#my-process)
+    - [Built with](#built-with)
+    - [What I learned](#what-i-learned)
+      - [Open React Router <Link> At The Top Of Page With JavaScript](#open-react-router-link-at-the-top-of-page-with-javascript)
+      - [Cleaning Importing SVGs In React](#cleaning-importing-svgs-in-react)
+      - [Using CSS grid to handle white space instead of margin](#using-css-grid-to-handle-white-space-instead-of-margin)
+    - [Useful resources](#useful-resources)
+  - [Author](#author)
 
 ## Overview
 
@@ -28,25 +47,52 @@ Users should be able to:
 - See hover states for all interactive elements throughout the site
 - Click the "About Me" call-to-action on the homepage and have the screen scroll down to the next section
 - Receive an error message when the contact form is submitted if:
-  - The `Name`, `Email Address` or `Message` fields are empty should show "This field is required"
+  - The `Name`, `Email Address` or `Message` fields are empty should show that the field is required.
   - The `Email Address` is not formatted correctly should show "Please use a valid email address"
 
 ### Screenshot
 
-![](./screenshot.jpg)
+#### Home Page
+##### Home Mobile
+![Home Mobile](readme_assets/home/home-mobile.png)
+##### Home Tablet
+![Home tablet](readme_assets/home/home-tablet.png)
+##### Home Desktop
+![Home Desktop](readme_assets/home/home-desktop.png)
+#### Portfolio Page
+##### Portfolio Mobile
+![Portfolio mobile](readme_assets/portfolio/portfolio-mobile.png)
+##### Portfolio Tablet
+![Portfolio tablet](readme_assets/portfolio/portfolio-tablet.png)
+##### Portfolio Desktop
+![Portfolio Desktop](readme_assets/portfolio/portfolio-desktop.png)
+#### A specific project Template Page
 
-Add a screenshot of your solution. The easiest way to do this is to use Firefox to view your project, right-click the page and select "Take a Screenshot". You can choose either a full-height screenshot or a cropped one based on how long the page is. If it's very long, it might be best to crop it.
+##### Mobile Project Template Page
+![A specific project Template Page in mobile size](readme_assets/project/project-mobile.png)
+##### Tablet Project Template Page
+![A specific project Template Page in Portfolio size tablet](readme_assets/project/project-tablet.png)
+##### Desktop Project Template Page
+![A specific project Template Page in Portfolio size Desktop](readme_assets/project/project-desktop.png)
+#### Contact-me Page
+##### Mobile Contact-me Page
 
-Alternatively, you can use a tool like [FireShot](https://getfireshot.com/) to take the screenshot. FireShot has a free option, so you don't need to purchase it. 
+![Contact-me mobile](readme_assets/contact-me/contact-me-mobile.png)
+##### Tablet Contact-me Page
+![Contact-me tablet](readme_assets/contact-me/contact-me-tablet.png)
+##### Desktop Contact-me Page
+![Contact-me Desktop](readme_assets/contact-me/contact-me-desktop.png)
 
-Then crop/optimize/edit your image however you like, add it to your project, and update the file path in the image above.
+#### Mobile Menu
+![Mobile menu](readme_assets/home-mobile-menu.png)
+#### Contact-me Form Error
+![Contact-me mobile](readme_assets/contact-me-form-error.png)
 
-**Note: Delete this note and the paragraphs above when you add your screenshot. If you prefer not to add a screenshot, feel free to remove this entire section.**
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Blog URL: [Royer Adames Blog](https://medium.com/@royeraadames)
+- Live Site URL: [Royer Adames Minimalist Portfolio](https://royer-adames-minimalist-portfolio.vercel.app/)
 
 ## My process
 
@@ -54,14 +100,10 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 
 - Semantic HTML5 markup
 - CSS custom properties
-- Flexbox
 - CSS Grid
 - Mobile-first workflow
 - [React](https://reactjs.org/) - JS library
-- [Next.js](https://nextjs.org/) - React framework
-- [Styled Components](https://styled-components.com/) - For styles
-
-**Note: These are just examples. Delete this note and replace the list above with your own choices**
+- [Sass](sass-lang.com/) - For styles
 
 ### What I learned
 
@@ -82,34 +124,58 @@ const proudOfThisFunc = () => {
   console.log('🎉')
 }
 ```
+#### Open React Router <Link> At The Top Of Page With JavaScript
+```js
+/* Link to previous and next projects on the project list */
+<Link
+  to={`/projects/${previousProjectDetail.id}/${previousProjectDetail.title}`}
+  className="other-project__previous-project-link"
+  onClick={() => {
+    window.scroll(0, 0);
+  }}
+>
+</Link>
+}
+```
+#### Cleaning Importing SVGs In React
+```js
+// import SVGs
+import { ReactComponent as LeftArrow } from "../images/icons/arrow-left.svg";
+import { ReactComponent as RightArrow } from "../images/icons/arrow-right.svg";
 
-If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
-
-**Note: Delete this note and the content within this section and replace with your own learnings.**
-
-### Continued development
-
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
-
-**Note: Delete this note and the content within this section and replace with your own plans for continued development.**
+// using the SVGs
+<LeftArrow className="other-project__button-icon other-project__previous-project-icon" />
+<RightArrow className="other-project__button-icon other-project__next-project-icon" />
+```
+#### Using CSS grid to handle white space instead of margin
+```css
+grid-template:
+  "hero hero" max-content
+  ". ." 11.5rem //white space
+  "manage background-article" min-content
+  "manage ." 4rem //white space
+  "manage previews" min-content
+  ". previews" max-content
+  ". ." 6.4rem // white space
+  "others others" 1fr
+  ". ." 6.4rem // white space
+  "contact-me contact-me" max-content
+  ;
+```
 
 ### Useful resources
 
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
-
-**Note: Delete this note and replace the list above with resources that helped you during the challenge. These could come in handy for anyone viewing your solution or for yourself when you look back on this project in the future.**
+- [Importing SVGs In React: The Clean Way](https://royeraadames.medium.com/importing-svgs-in-react-the-clean-way-2d6e65da73cd) - Clean way to import SVGs.
+- [Open React Router <Link> At The Top Of Page With JavaScript](https://royeraadames.medium.com/open-react-router-link-at-top-of-page-c8e48a72da99) - Open React Router DOM <Link>s At The Top Of Page With JavaScript so that the user does not feel confuse when navigating the page.
+- [Responsive images](https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images) - How to handle responsive images.
+- [What Img Srcset Does In HTML5: A Quick & Simple Guide](https://html.com/attributes/img-srcset/) - How to handle responsive images.
+- [Style child element when hover on parent](https://stackoverflow.com/questions/7217244/style-child-element-when-hover-on-parent) - How to change the style of children's element when there is hover on the parent element.
+- [HTML Horizontal Line](https://www.bitdegree.org/learn/html-horizontal-line) - How to decide between semantic line or visual line.
+- [set a className on custom react components](https://stackoverflow.com/a/46040808/3044126) - Passing props to add custom CSS classes to components.
+- [Dynamically import images in React](https://www.youtube.com/watch?v=zYE-PbInWNE) - A way to dynamically render images in React.
+- [In ReactJS trying to get params but I get property 'id' does not exist on type '{}'](https://stackoverflow.com/a/64082419/3044126) - React TypeScript fix for params type error.
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
-
-**Note: Delete this note and add/remove/edit lines above based on what links you'd like to share.**
-
-## Acknowledgments
-
-This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit.
-
-**Note: Delete this note and edit this section's content as necessary. If you completed this challenge by yourself, feel free to delete this section entirely.**
+- Blog - [Medium](https://royeraadames.medium.com/)
+- LinkedIn - [royeradames](https://www.linkedin.com/in/royer-adames/)
