@@ -8,19 +8,15 @@ import homeHeroDesktop from "../images/homepage/desktop/image-homepage-hero.jpg"
 import { ReactComponent as DownArrow } from "../images/icons/down-arrows.svg";
 import { Link } from "react-router-dom";
 import ConctactMeArticle from "./ContactMeArticle";
-
+import viewPortsSize from "../viewPortsSize";
 function Home() {
-  const mobileView = "368w";
-  const tabletView = "768w";
-  const desktopView = "1440w";
-
   return (
     <>
       <article className="home">
         <article className="home__welcome-message welcome-message">
           <img
             src={homeHeroMobile}
-            srcSet={`${homeHeroMobile} ${mobileView}, ${homeHeroTable} ${tabletView}, ${homeHeroDesktop} ${desktopView}`}
+            srcSet={`${homeHeroMobile} ${viewPortsSize.mobile}, ${homeHeroTable} ${viewPortsSize.tablet}, ${homeHeroDesktop} ${viewPortsSize.desktop}`}
             alt="Mac desktop and laptopn on a table."
             className="home__hero welcome-message__hero"
           />
@@ -43,12 +39,12 @@ function Home() {
 
         <article className="home__about-me about-me" id="about">
           <img
-            src={selfieMobile}
             srcSet={`
-            ${selfieTablet} 768w, 
-            ${selfieDesktop} 1440w, 
-            ${selfieMobile} 368w,
+            ${selfieMobile} ${viewPortsSize.mobile},
+            ${selfieTablet} ${viewPortsSize.tablet}, 
+            ${selfieDesktop} ${viewPortsSize.desktop}, 
                    `}
+            src={selfieMobile}
             alt="Selfie"
             className="home__selfie about-me__selfie"
           />
