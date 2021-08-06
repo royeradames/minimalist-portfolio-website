@@ -1,0 +1,32 @@
+$tablet: 768px;
+$desktop: 1440px;
+
+.website{
+    // add white space from the edges for the website besides the footer
+    display: grid;
+    grid-template:
+        ". . ." 3.2rem
+        ". header ." max-content
+        ". pages ." max-content
+        "footer footer footer" max-content
+        / 3.2rem 1fr 3.2rem
+    ;
+
+    
+
+    
+    &__header{
+        // layout: give element an area
+        grid-area: header;
+    }
+    &__pages{
+        // layout: give element an area
+        grid-area: pages;
+
+        
+    }
+    &__footer{
+        // layout: give element an area
+        grid-area: footer;
+    }
+}
