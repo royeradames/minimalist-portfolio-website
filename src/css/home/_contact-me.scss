@@ -5,8 +5,9 @@ $desktop: 1440px;
     // layout
     display: grid;
     justify-items: center;
-
+    row-gap: 4rem;
     @media(min-width: $tablet){
+        row-gap: initial;
         grid-template:
             "title horizontal-line btn" 1fr
             / 35rem 1fr min-content
