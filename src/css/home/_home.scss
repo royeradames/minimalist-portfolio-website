@@ -3,12 +3,9 @@ $desktop: 1440px;
 
 // general styles
 .home{
-    //keep articles separate
-    display: grid; 
-    
     // separate articles
+    display: grid; 
     row-gap: 9.6rem;
-
     @media(min-width: $tablet){
         // increase white space to separate articles
         row-gap: 9.6rem;
@@ -17,6 +14,19 @@ $desktop: 1440px;
         // increase white space to separate articles
         row-gap: 15rem;
     }
+
+    // separate the header and footer
+    margin: 4rem 0 8rem;
+    @media(min-width: $tablet){
+        // increase white space
+        margin: 4.7rem 0 9.6rem;
+    }
+    @media(min-width: $desktop){
+        // increase white space
+        margin: 5.4rem 0 15rem;
+    }
+
+    
     
     &__message{
         // text
