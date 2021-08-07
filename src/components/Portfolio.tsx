@@ -82,10 +82,10 @@ const Portfolio = () => {
     );
   };
   return (
-    <article className="website__pages portfolio">
+    <main className="website__pages portfolio">
       {portfolioList(projectSnipeDetails)}
       <ContactMeArticle page="portfolio" />
-    </article>
+    </main>
   );
 };
 
