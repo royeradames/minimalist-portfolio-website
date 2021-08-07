@@ -1,4 +1,9 @@
+$desktop: 1440px;
+
 .contact-page{
-    // add spacing away from the header
-    margin-top: 4rem;
+    // separate the header and footer
+    @media(min-width: $desktop){
+        // increase white space
+        margin-bottom: 10.9rem;
+    }
 }
