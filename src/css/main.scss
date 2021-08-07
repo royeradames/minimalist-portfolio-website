@@ -1,5 +1,7 @@
 @use "./global";
-@use "./header-content-wrap";
+
+/* elements */
+@use "./website";
 @use "./nav";
 @use "./social-media";
 @use "./header";
@@ -17,7 +19,8 @@
 // form elements
 @use "./form-elements";
 
-// home styles
+/* pages */
+// home 
 @use "./home/home";
 @use "./home/welcome-message";
 @use "./home/about-me";
@@ -33,7 +36,7 @@
 @use "./project/previews";
 @use "./project/other-projects";
 
-// contact page
+// contact-me
 @use "./contact-page/contact-page";
 @use "./contact-page/contact-message";
 @use "./contact-page//contact-form";
