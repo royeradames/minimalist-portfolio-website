@@ -12,9 +12,27 @@ $desktop: 1440px;
         / 3.2rem 1fr 3.2rem
     ;
 
-    
+    @media(min-width: $tablet){
+        // increase white space
+        grid-template:
+        ". . ." 6.4rem
+        ". header ." max-content
+        ". pages ." max-content
+        "footer footer footer" max-content
+        / 6.4rem 1fr 6.4rem
+        ;
+    }
 
-    
+    @media(min-width: $desktop){
+        // increase white space on the sides
+        grid-template:
+            ". . ." 6.4rem
+            ". header ." max-content
+            ". pages ." max-content
+            "footer footer footer" max-content
+            / 16.5rem 1fr 16.5rem
+        ;
+    }
     &__header{
         // layout: give element an area
         grid-area: header;
