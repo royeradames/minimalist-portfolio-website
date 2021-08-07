@@ -7,7 +7,7 @@ import Home from "./components/Home";
 import Portfolio from "./components/Portfolio";
 import Footer from "./components/Footer";
 import Project from "./components/Project";
-import ContactMe from "./components/ContactMe";
+import ContactForm from "./components/ContactForm";
 
 function App() {
   return (
@@ -23,7 +23,7 @@ function App() {
             <Project />
           </Route>
           <Route path="/contact">
-            <ContactMe />
+            <ContactForm />
           </Route>
           <Route path="/">
             <Home />
