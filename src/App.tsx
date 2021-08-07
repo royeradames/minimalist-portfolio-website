@@ -13,24 +13,23 @@ function App() {
   return (
     <main className="main-content">
       <Router>
-        <div className="header-content-wrap">
-          <Header />
-          <Switch>
-            <Route path="/portfolio">
-              <Portfolio />
-            </Route>
-            <Route path="/projects/:id/:title">
-              {/* Render the project information base on the project title */}
-              <Project />
-            </Route>
-            <Route path="/contact">
-              <ContactMe />
-            </Route>
-            <Route path="/">
-              <Home />
-            </Route>
-          </Switch>
-        </div>
+        <Header />
+        <Switch>
+          <Route path="/portfolio">
+            <Portfolio />
+          </Route>
+          <Route path="/projects/:id/:title">
+            {/* Render the project information base on the project title */}
+            <Project />
+          </Route>
+          <Route path="/contact">
+            <ContactMe />
+          </Route>
+          <Route path="/">
+            <Home />
+          </Route>
+        </Switch>
+
         <Footer />
       </Router>
     </main>
