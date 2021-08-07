@@ -28,12 +28,22 @@ function Home() {
     <>
       <article className="home">
         <article className="home__welcome-message welcome-message">
-          <img
-            src={homeHeroMobile}
-            srcSet={`${homeHeroMobile} ${viewPortsSize.mobile}, ${homeHeroTable} ${viewPortsSize.tablet}, ${homeHeroDesktop} ${viewPortsSize.desktop}`}
-            alt="Mac desktop and laptopn on a table."
-            className="home__hero welcome-message__hero"
-          />
+          {/* show the images depending on the sizes, and the px density */}
+          <picture className="home__hero welcome-message__hero">
+            <source
+              srcSet={`${homeHeroDesktop} 1x, ${homeHeroDesktop2x}  2x`}
+              media={mediaQueries.desktop}
+            />
+            <source
+              srcSet={`${homeHeroTable} 1x, ${homeHeroTable2x}  2x`}
+              media={mediaQueries.tablet}
+            />
+            <source srcSet={`${homeHeroMobile} 1x, ${homeHeroMobile2x}  2x`} />
+            <img
+              src={homeHeroMobile}
+              alt="Mac desktop and laptopn on a table."
+            />
+          </picture>
           <div className="welcome-message__call-to-action">
             <h1 className="title home__title welcome-message__title">
               Hey, I’m Alex Spencer and I love building beautiful websites
@@ -52,16 +62,19 @@ function Home() {
         </article>
 
         <article className="home__about-me about-me" id="about">
-          <img
-            srcSet={`
-            ${selfieMobile} ${viewPortsSize.mobile},
-            ${selfieTablet} ${viewPortsSize.tablet}, 
-            ${selfieDesktop} ${viewPortsSize.desktop}, 
-                   `}
-            src={selfieMobile}
-            alt="Selfie"
-            className="home__selfie about-me__selfie"
-          />
+          <picture className="home__selfie about-me__selfie">
+            <source
+              srcSet={`${selfieDesktop} 1x, ${selfieDesktop2x} 2x`}
+              media="(min-width: 1440px)"
+            />
+            <source
+              srcSet={`${selfieTablet} 1x, ${selfieTablet2x} 2x`}
+              media="(min-width: 768px)"
+            />
+            <source srcSet={`${selfieMobile} 1x, ${selfieMobile2x} 2x`} />
+            <img src={selfieMobile} alt="Selfie" />
+          </picture>
+
           <div className="horizontal-line horizontal-line-first about-me__horizontal-line about-me__horizontal-line-top" />
           <h2 className="title home__title about-me__title">About Me</h2>
           <p className="home__message about-me__message">
