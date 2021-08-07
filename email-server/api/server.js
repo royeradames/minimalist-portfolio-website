@@ -25,5 +25,9 @@ server.get("/", (req, res) => {
     res.status(200).send(`<h1>Server is up and running</h1>`)
 })
 
+// catch errors
+server.use((err, req, res, next) => {
+    res.status(500).json({err})
+})
 
 module.exports = server
