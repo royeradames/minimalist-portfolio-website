@@ -23,7 +23,16 @@ $desktop: 1440px;
         // layout: give element an area
         grid-area: pages;
 
-        
+        // separate the header and footer
+        margin: 4rem 0 8rem;
+        @media(min-width: $tablet){
+            // increase white space
+            margin: 4.7rem 0 9.6rem;
+        }
+        @media(min-width: $desktop){
+            // increase white space
+            margin: 5.4rem 0 15rem;
+        }
     }
     &__footer{
         // layout: give element an area
