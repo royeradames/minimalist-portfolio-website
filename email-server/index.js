@@ -1,26 +1,8 @@
-require("dotenv").config();
-const nodemailer = require("nodemailer");
+const server = require("./api/server");
 
-// async..await is not allowed in global scope, must use a wrapper
-async function main() {
-  // create reusable transporter object using the default SMTP transport
-  let transporter = nodemailer.createTransport({
-    service: "Gmail",
-    auth: {
-      user: process.env.GMAIL_USER,
-      pass: process.env.GMAIL_PASS,
-    },
-  });
+// dynamic port
+const PORT = process.env.PORT || 5000
 
-  // send mail with defined transport object
-  await transporter.sendMail({
-    from: '"Fred Foo 👻" <foo@example.com>', // sender address
-    to: process.env.RECEIVER_EMAIL, // list of receivers
-    subject: "Hello ✔", // Subject line
-    text: "Hello world?", // plain text body
-    html: "<b>Hello world?</b>", // html body
-  });
-
-}
-
-main().catch(console.error);
+server.listen(PORT, () => {
+  console.log(`\n=== Server listening on port ${PORT} ===\n`)
+})
