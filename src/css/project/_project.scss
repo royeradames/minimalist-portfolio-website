@@ -34,19 +34,19 @@ $desktop: 1440px;
     ;
     } 
     @media(min-width: $desktop){
-        // big layout
-            column-gap: 12.5rem;
-            grid-template:
-            "hero hero" max-content
-            ". ." 11.5rem //white space
-            "manage background-article" min-content
-            "manage ." 4rem //white space
-            "manage previews" min-content
-            ". previews" max-content
-            ". ." 6.4rem // white space
-            "others others" 1fr
-            ". ." 6.4rem // white space
-            "contact-me contact-me" max-content
+        // layout content in 2 columns and increase white space
+        column-gap: 12.5rem;
+        grid-template:
+        "hero hero" max-content
+        ". ." 11.5rem //white space
+        "manage background-article" min-content
+        "manage ." 4rem //white space
+        "manage previews" min-content
+        ". previews" max-content
+        ". ." 6.4rem // white space
+        "others others" 1fr
+        ". ." 15rem // white space
+        "contact-me contact-me" max-content
         ;
     } 
     &__hero{
