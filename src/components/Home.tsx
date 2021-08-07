@@ -1,14 +1,28 @@
+// libraries
 import React from "react";
-import selfieMobile from "../images/homepage/mobile/image-homepage-profile.jpg";
-import selfieTablet from "../images/homepage/tablet/image-homepage-profile.jpg";
-import selfieDesktop from "../images/homepage/desktop/image-homepage-profile.jpg";
-import homeHeroMobile from "../images/homepage/mobile/image-homepage-hero.jpg";
-import homeHeroTable from "../images/homepage/tablet/image-homepage-hero.jpg";
-import homeHeroDesktop from "../images/homepage/desktop/image-homepage-hero.jpg";
 import { ReactComponent as DownArrow } from "../images/icons/down-arrows.svg";
 import { Link } from "react-router-dom";
+
+// images
+import selfieMobile from "../images/homepage/mobile/image-homepage-profile.jpg";
+import selfieMobile2x from "../images/homepage/mobile/image-homepage-profile@2x.jpg";
+import selfieTablet from "../images/homepage/tablet/image-homepage-profile.jpg";
+import selfieTablet2x from "../images/homepage/tablet/image-homepage-profile@2x.jpg";
+import selfieDesktop from "../images/homepage/desktop/image-homepage-profile.jpg";
+import selfieDesktop2x from "../images/homepage/desktop/image-homepage-profile@2x.jpg";
+import homeHeroMobile from "../images/homepage/mobile/image-homepage-hero.jpg";
+import homeHeroMobile2x from "../images/homepage/mobile/image-homepage-hero@2x.jpg";
+import homeHeroTable from "../images/homepage/tablet/image-homepage-hero.jpg";
+import homeHeroTable2x from "../images/homepage/tablet/image-homepage-hero@2x.jpg";
+import homeHeroDesktop from "../images/homepage/desktop/image-homepage-hero.jpg";
+import homeHeroDesktop2x from "../images/homepage/desktop/image-homepage-hero@2x.jpg";
+
+// components
 import ConctactMeArticle from "./ContactMeArticle";
-import viewPortsSize from "../viewPortsSize";
+
+// variables
+import mediaQueries from "../viewPortsSize";
+
 function Home() {
   return (
     <>
