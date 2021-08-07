@@ -1,4 +1,29 @@
-const projectData = [
+const projectData: {
+  id: number;
+  heroMobile: string;
+  heroMobile2x: string;
+  heroTablet: string;
+  heroTablet2x: string;
+  heroDesktop: string;
+  heroDesktop2x: string;
+  title: string;
+  intro: string;
+  jobTitle: string;
+  techStack: string;
+  background: string;
+  imgMobilePreview: string;
+  imgMobilePreview2x: string;
+  imgMobile2Preview: string;
+  imgMobile2Preview2x: string;
+  imgTabletPreview: string;
+  imgTabletPreview2x: string;
+  imgTablet2Preview: string;
+  imgTablet2Preview2x: string;
+  imgDesktopPreview: string;
+  imgDesktopPreview2x: string;
+  imgDesktop2Preview: string;
+  imgDesktop2Preview2x: string;
+}[] = [
   {
     id: 1,
     heroMobile: "/images/detail/mobile/image-manage-hero.jpg",
