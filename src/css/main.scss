@@ -1,30 +1,29 @@
 @use "./global";
 
 /* elements */
-@use "./website";
-@use "./nav";
-@use "./social-media";
-@use "./header";
-@use "./footer";
-
+@use "./elements/website";
+@use "./elements/nav";
+@use "./elements/social-media";
+@use "./elements/header";
+@use "./elements/footer";
+@use "./elements/contact-me";
 
 // button
-@use "./button/button";
-@use "./button/primary-normal";
-@use "./button/primary-disable";
-@use "./button/secondary-button";
-@use "./button/secondary-normal";
-@use "./button/secondary-disable";
+@use "./elements/button/button";
+@use "./elements/button/primary-normal";
+@use "./elements/button/primary-disable";
+@use "./elements/button/secondary-button";
+@use "./elements/button/secondary-normal";
+@use "./elements/button/secondary-disable";
 
 // form elements
-@use "./form-elements";
+@use "./elements/form-elements";
 
 /* pages */
 // home 
 @use "./home/home";
 @use "./home/welcome-message";
 @use "./home/about-me";
-@use "./home/contact-me";
 
 // portfolio
 @use "./portfolio/portfolio";
