@@ -82,7 +82,7 @@ const Portfolio = () => {
     );
   };
   return (
-    <article className="portfolio">
+    <article className="website__pages portfolio">
       {portfolioList(projectSnipeDetails)}
       <ContactMeArticle page="portfolio" />
     </article>
