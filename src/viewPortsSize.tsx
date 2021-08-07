@@ -1,6 +1,5 @@
-const viewPortsSize = {
-  mobile: "368w",
-  tablet: "768w",
-  desktop: "1440w",
+const mediaQueries = {
+  tablet: "(min-width: 768px)",
+  desktop: "(min-width: 1440px)",
 };
-export default viewPortsSize;
+export default mediaQueries;
