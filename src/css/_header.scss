@@ -21,6 +21,9 @@ $desktop: 1440px;
         // change logo color
         fill: var(--gray-blue-900);
 
+        // remove link wrapping more than the logo
+        justify-self: start;
+
         &:hover{
             fill: var(--green)
         }
