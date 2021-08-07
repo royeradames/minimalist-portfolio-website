@@ -18,8 +18,16 @@ const ContactForm = () => {
   const {
     register,
     handleSubmit,
-    formState: { errors },
+    reset,
+    formState: { errors, isSubmitSuccessful },
   } = useForm({ resolver: yupResolver(schema) });
+
+  React.useEffect(() => {
+    // reset the form when submited
+    if (isSubmitSuccessful) {
+      reset();
+    }
+  }, [isSubmitSuccessful, reset]);
 
   const onSubmit = (data: any) => {
     // send the form data to the specify email
