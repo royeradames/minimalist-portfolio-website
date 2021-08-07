@@ -11,7 +11,7 @@ import ContactMe from "./components/ContactMe";
 
 function App() {
   return (
-    <main className="main-content">
+    <article className="website">
       <Router>
         <Header />
         <Switch>
@@ -32,7 +32,7 @@ function App() {
 
         <Footer />
       </Router>
-    </main>
+    </article>
   );
 }
 
