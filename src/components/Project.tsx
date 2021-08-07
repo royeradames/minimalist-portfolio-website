@@ -1,16 +1,18 @@
-// import library
+// libraries
 import React from "react";
 import { useParams } from "react-router-dom";
 import { Link } from "react-router-dom";
 
-// import data
+// data
 import projectsDetail from "../projectsDetail";
-import views from "../viewPortsSize";
 
-// import components
+//variables
+import mediaQueries from "../viewPortsSize";
+
+// components
 import ContactMeArticle from "./ContactMeArticle";
 
-// import SVGs
+// SVGs
 import { ReactComponent as LeftArrow } from "../images/icons/arrow-left.svg";
 import { ReactComponent as RightArrow } from "../images/icons/arrow-right.svg";
 
@@ -49,12 +51,22 @@ const Project = () => {
     return (
       <>
         {/* unpack project data identify by params */}
-        <img
-          src={currentProjectDetail.heroMobile}
-          srcSet={`${currentProjectDetail.heroMobile} ${views.mobile}, ${currentProjectDetail.heroTablet} ${views.tablet}, ${currentProjectDetail.heroDesktop} ${views.desktop}`}
-          alt={`Desktop preview of the ${title} project`}
-          className="project__hero"
-        />
+        {/* show the images depending on the sizes, and the px density */}
+        <picture className="project__hero">
+          <source
+            media={mediaQueries.desktop}
+            srcSet={`${currentProjectDetail.heroDesktop} 1x, `}
+          />
+          <source
+            media={mediaQueries.tablet}
+            srcSet={`${currentProjectDetail.heroTablet} 1x, `}
+          />
+          <source srcSet={currentProjectDetail.heroMobile} />
+          <img
+            src={currentProjectDetail.heroMobile}
+            alt={`Desktop preview of the ${title} project`}
+          />
+        </picture>
         <article className="project__intro intro">
           <div className="horizontal-line intro__horizontal-line-top" />
           <h1 className="title  intro__title">{currentProjectDetail.title}</h1>
@@ -82,18 +94,37 @@ const Project = () => {
         </article>
         <article className="project__previews previews">
           <h2 className="project__title previews__title">Static Previews</h2>
-          <img
-            src={currentProjectDetail.imgMobilePreview}
-            srcSet={`${currentProjectDetail.imgMobilePreview} ${views.mobile}, ${currentProjectDetail.imgTabletPreview} ${views.tablet}, ${currentProjectDetail.imgDesktopPreview} ${views.desktop}`}
-            alt={`Desktop preview of ${currentProjectDetail.title} project`}
-            className="previews__preview-1"
-          />
-          <img
-            src={currentProjectDetail.imgMobile2Preview}
-            srcSet={`${currentProjectDetail.imgMobile2Preview} ${views.mobile}, ${currentProjectDetail.imgTablet2Preview} ${views.tablet}, ${currentProjectDetail.imgDesktop2Preview} ${views.desktop}`}
-            alt={`Mobile preview of ${currentProjectDetail.title} project`}
-            className="previews__preview-2"
-          />
+
+          <picture className="previews__preview-1">
+            <source
+              srcSet={`${currentProjectDetail.imgDesktopPreview} 1x, ${currentProjectDetail.imgDesktopPreview2x} 2x`}
+            />
+            <source
+              srcSet={`${currentProjectDetail.imgTabletPreview} 1x, ${currentProjectDetail.imgTabletPreview2x} 2x`}
+              media={mediaQueries.tablet}
+            />
+            <source srcSet={`${currentProjectDetail.imgMobilePreview}`} />
+            <img
+              src={currentProjectDetail.imgMobilePreview}
+              alt={`Desktop preview of ${currentProjectDetail.title} project`}
+            />
+          </picture>
+
+          <picture className="previews__preview-2">
+            <source
+              srcSet={`${currentProjectDetail.imgDesktop2Preview} 1x, ${currentProjectDetail.imgDesktop2Preview2x} 2x`}
+              media={mediaQueries.desktop}
+            />
+            <source
+              srcSet={`${currentProjectDetail.imgTablet2Preview} 1x, ${currentProjectDetail.imgTablet2Preview2x} 2x`}
+              media={mediaQueries.tablet}
+            />
+            <source srcSet={`${currentProjectDetail.imgMobile2Preview}`} />
+            <img
+              src={currentProjectDetail.imgMobile2Preview}
+              alt={`Mobile preview of ${currentProjectDetail.title} project`}
+            />
+          </picture>
         </article>
         <article className="project__others-project other-project">
           {/* Link to previous and next projects on the project list */}
@@ -140,10 +171,10 @@ const Project = () => {
     );
   };
   return (
-    <article className="project">
+    <main className="website__pages project">
       {projectDetails()}
       <ContactMeArticle page="project" />
-    </article>
+    </main>
   );
 };
 
