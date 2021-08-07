@@ -19,7 +19,12 @@ $desktop: 1440px;
     }
 
     &__hero{
+        // layout
+        // add element to area
         grid-area: img;
+        
+        // center image
+        justify-self: center;
     }
 
     &__title{
