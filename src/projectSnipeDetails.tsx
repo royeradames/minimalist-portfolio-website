@@ -1,4 +1,14 @@
-const projectSnipeDetails = [
+const projectSnipeDetails: {
+  id: number;
+  title: string;
+  message: string;
+  imgLinkMobile: string;
+  imgLinkMobile2x: string;
+  imgLinkTablet: string;
+  imgLinkTablet2x: string;
+  imgLinkDesktop: string;
+  imgLinkDesktop2x: string;
+}[] = [
   {
     id: 1,
     title: "manage",
