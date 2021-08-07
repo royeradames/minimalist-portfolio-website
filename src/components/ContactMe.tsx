@@ -23,7 +23,7 @@ const ContactMe = () => {
   };
 
   return (
-    <article className="contact-page">
+    <main className="website__pages contact-page">
       <article className="contact-message">
         <div className="horizontal-line contact-message__horizontal-line " />
         <h2 className="title contact-message__title">Get in Touch</h2>
@@ -118,7 +118,7 @@ const ContactMe = () => {
           </button>
         </form>
       </article>
-    </article>
+    </main>
   );
 };
 
