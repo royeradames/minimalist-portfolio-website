@@ -31,6 +31,7 @@ This is a solution to the [Minimalist portfolio website challenge on Frontend Me
   - [My process](#my-process)
     - [Built with](#built-with)
     - [What I learned](#what-i-learned)
+      - [show the images depending on the sizes, and the px density](#show-the-images-depending-on-the-sizes-and-the-px-density)
       - [Open React Router <Link> At The Top Of Page With JavaScript](#open-react-router-link-at-the-top-of-page-with-javascript)
       - [Cleaning Importing SVGs In React](#cleaning-importing-svgs-in-react)
       - [Using CSS grid to handle white space instead of margin](#using-css-grid-to-handle-white-space-instead-of-margin)
@@ -124,6 +125,28 @@ const proudOfThisFunc = () => {
   console.log('🎉')
 }
 ```
+#### show the images depending on the sizes, and the px density
+```js
+<picture className="portfolio__img">
+  <source
+    srcSet={`${project.imgLinkDesktop} 1x, ${project.imgLinkDesktop2x} 2x`}
+    media={mediaQueries.desktop}
+  />
+  <source
+    srcSet={`${project.imgLinkTablet} 1x, ${project.imgLinkTablet2x} 2x`}
+    media={mediaQueries.tablet}
+  />
+  <source
+    srcSet={`${project.imgLinkMobile} 1x, ${project.imgLinkMobile2x}`}
+  />
+  <img
+    src={project.imgLinkMobile}
+    alt={`${project.title} project`}
+  />
+</picture>
+
+}
+```
 #### Open React Router <Link> At The Top Of Page With JavaScript
 ```js
 /* Link to previous and next projects on the project list */
@@ -165,6 +188,7 @@ grid-template:
 
 ### Useful resources
 
+- [Responsive images in React: show images depending on windows size, and the px density](https://royeraadames.medium.com/responsive-images-in-react-show-images-depending-on-windows-size-and-the-px-density-ab8e9caa34c5) - Show the images depending on the sizes, and the px density.
 - [Importing SVGs In React: The Clean Way](https://royeraadames.medium.com/importing-svgs-in-react-the-clean-way-2d6e65da73cd) - Clean way to import SVGs.
 - [Open React Router <Link> At The Top Of Page With JavaScript](https://royeraadames.medium.com/open-react-router-link-at-top-of-page-c8e48a72da99) - Open React Router DOM <Link>s At The Top Of Page With JavaScript so that the user does not feel confuse when navigating the page.
 - [Responsive images](https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images) - How to handle responsive images.
