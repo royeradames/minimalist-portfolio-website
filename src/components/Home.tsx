@@ -26,7 +26,7 @@ import mediaQueries from "../viewPortsSize";
 function Home() {
   return (
     <>
-      <article className="home">
+      <main className="website__pages home">
         <article className="home__welcome-message welcome-message">
           {/* show the images depending on the sizes, and the px density */}
           <picture className="home__hero welcome-message__hero">
@@ -95,7 +95,7 @@ function Home() {
           <div className="horizontal-line horizontal-line-last about-me__horizontal-line about-me__horizontal-line-bottom" />
         </article>
         <ConctactMeArticle page="home" />
-      </article>
+      </main>
     </>
   );
 }
