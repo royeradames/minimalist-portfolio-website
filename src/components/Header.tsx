@@ -16,7 +16,7 @@ function Header() {
   return (
     <>
       <header className="website__header header">
-        <Link to="/">
+        <Link to="/" className="header__logo">
           <Logo />
         </Link>
         <Hamburger
