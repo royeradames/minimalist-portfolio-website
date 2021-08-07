@@ -6,7 +6,7 @@ import SocialMedia from "./SocialMedia";
 function Footer() {
   return (
     <>
-      <footer className="footer">
+      <footer className="website__footer footer">
         <Link
           to="/"
           onClick={() => {

@@ -15,9 +15,9 @@ function Header() {
   };
   return (
     <>
-      <header className="header">
+      <header className="website__header header">
         <Link to="/">
-          <Logo className="header__logo" />
+          <Logo />
         </Link>
         <Hamburger
           className={`header__hamburger ${isMenuOpen ? "header__hide" : ""}`}
