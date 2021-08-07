@@ -1,0 +1,19 @@
+{
+  "name": "email-server",
+  "version": "1.0.0",
+  "description": "This gets the contact form data and uses your email of choice to send the data to your prefer email you prefer.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "NODE_TLS_REJECT_UNAUTHORIZED=0 && node index.js"
+  },
+  "keywords": [
+    "email"
+  ],
+  "author": "Royer Adames",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^10.0.0",
+    "nodemailer": "^6.6.3"
+  }
+}
