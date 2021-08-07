@@ -1,3 +1,4 @@
+$tablet: 768px;
 $desktop: 1440px;
 
 .project{
@@ -16,6 +17,22 @@ $desktop: 1440px;
         "." 6.4rem // white space
         "contact-me" max-content
     ;
+    @media(min-width: $tablet){
+        // increase white sapce
+        grid-template:
+        "hero" max-content
+        "." 4rem //white space
+        "manage" max-content
+        "." 4rem //white space
+        "background-article" max-content
+        "." 4rem //white space
+        "previews" max-content
+        "." 8rem // white space
+        "others" 1fr
+        "." 8rem // white space
+        "contact-me" max-content
+    ;
+    } 
     @media(min-width: $desktop){
         // big layout
             column-gap: 12.5rem;
@@ -31,7 +48,7 @@ $desktop: 1440px;
             ". ." 6.4rem // white space
             "contact-me contact-me" max-content
         ;
-        } 
+    } 
     &__hero{
         // layout: add element to grid area, and center image
         grid-area: hero;
