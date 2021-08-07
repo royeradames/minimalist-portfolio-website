@@ -18,7 +18,7 @@ $desktop: 1440px;
         "contact-me" max-content
     ;
     @media(min-width: $tablet){
-        // increase white sapce
+        // increase white space
         grid-template:
         "hero" max-content
         "." 4rem //white space
