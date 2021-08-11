@@ -3,11 +3,11 @@ import "./css/main.scss";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 // components
 import Header from "./components/Header";
-import Home from "./components/Home";
-import Portfolio from "./components/Portfolio";
+import Home from "./pages/Home";
+import Portfolio from "./pages/Portfolio";
 import Footer from "./components/Footer";
-import Project from "./components/Project";
-import ContactForm from "./components/ContactForm";
+import Project from "./pages/Project";
+import ContactForm from "./pages/ContactForm";
 
 function App() {
   return (

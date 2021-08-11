@@ -3,10 +3,10 @@ import React from "react";
 import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 import * as yup from "yup";
-import emailjs from "emailjs-com";
+import axios from "axios";
 
 //components
-import SocialMedia from "./SocialMedia";
+import SocialMedia from "../components/SocialMedia";
 
 // schema
 const schema = yup.object().shape({
@@ -29,20 +29,14 @@ const ContactForm = () => {
     }
   }, [isSubmitSuccessful, reset]);
 
-  const onSubmit = (data: any) => {
+  const onSubmit = async (data: any) => {
     // send the form data to the specify email
     // user specific id are needed.
     try {
-      emailjs
-        .sendForm("YOUR_SERVICE_ID", "YOUR_TEMPLATE_ID", data, "YOUR_USER_ID")
-        .then(
-          (result) => {
-            console.log(result.text);
-          },
-          (error) => {
-            console.log(error.text);
-          }
-        );
+      await axios.post(
+        "https://royer-adames-email-sender.herokuapp.com/email/",
+        data
+      );
     } catch (error) {
       console.log("User send form id are not setup yet.");
       console.log("The data was: ");

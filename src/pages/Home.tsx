@@ -18,7 +18,7 @@ import homeHeroDesktop from "../images/homepage/desktop/image-homepage-hero.jpg"
 import homeHeroDesktop2x from "../images/homepage/desktop/image-homepage-hero@2x.jpg";
 
 // components
-import ConctactMeArticle from "./ContactMeArticle";
+import ConctactMeArticle from "../components/ContactMeArticle";
 
 // variables
 import mediaQueries from "../viewPortsSize";

@@ -10,7 +10,7 @@ import projectsDetail from "../projectsDetail";
 import mediaQueries from "../viewPortsSize";
 
 // components
-import ContactMeArticle from "./ContactMeArticle";
+import ContactMeArticle from "../components/ContactMeArticle";
 
 // SVGs
 import { ReactComponent as LeftArrow } from "../images/icons/arrow-left.svg";

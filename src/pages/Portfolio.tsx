@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import mediaQueries from "../viewPortsSize";
 import projectSnipeDetails from "../projectSnipeDetails";
 // component
-import ContactMeArticle from "./ContactMeArticle";
+import ContactMeArticle from "../components/ContactMeArticle";
 
 const Portfolio = () => {
   const pattern = (id: number) => {
