@@ -1,10 +1,10 @@
-# Frontend Mentor - Minimalist portfolio website solution
+# Minimalist portfolio Template
 
-This is a solution to the [Minimalist portfolio website challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/minimalist-portfolio-website-LMy-ZRyiE). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
+You can use my [emailer server](https://github.com/royeradames/email-server.git) for getting the form data to your email.
 
 ## Table of contents
 
-- [Frontend Mentor - Minimalist portfolio website solution](#frontend-mentor---minimalist-portfolio-website-solution)
+- [Minimalist portfolio Template](#minimalist-portfolio-template)
   - [Table of contents](#table-of-contents)
   - [Overview](#overview)
     - [The challenge](#the-challenge)
