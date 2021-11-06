@@ -11,5 +11,6 @@ const environment = process.env.DB_ENV || "development"
 const server = new ApolloServer({
     typeDefs, 
     resolvers,
+    dataSources: () => ({ db: new TrackDB(knexConfig[environment])})
 })
 
