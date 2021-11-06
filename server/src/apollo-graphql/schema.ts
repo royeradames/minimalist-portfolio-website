@@ -1,6 +1,18 @@
 import {gql} from "apollo-server"
 
 const typeDefs = gql`
+    "Add mutation specific fields when mutating a project"
+    type ProjectMutation {
+        "Like HTTP status response code"
+        code: Int!
+        "Indicates whether the mutation was successful or not"
+        success: Boolean!
+        "Human readable message for the UI"
+        message: String!
+        "Newly changed project"
+        project: Project
+    }
+
     "A project is a list of project specific infromation"
     type Project{
         ProjectId: ID!
