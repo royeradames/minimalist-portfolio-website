@@ -1,6 +1,28 @@
 import {gql} from "apollo-server"
 
 const typeDefs = gql`
+    type Mutation {
+        "Update a project"
+        updateProject( id: ID!, title: String, intro: String, jobTitle: String, background: String, techstack: String): ProjectMutation
+        "Add a new project"
+        newProject(title: String, intro: String, jobTitle: String, background: String, techstack: String): ProjectMutation
+        "Delete a project"
+        deleteProject(id:ID!): ProjectMutation
+        "Add a project images"
+        addProjectImages(
+            projectId: ID!,
+            heroImageTitle: String!, 
+            heroImageAltText: String!, 
+            heroImgSrc: String!,
+            desktopImageTitle: String!, 
+            desktopImageAltText: String!, 
+            desktopImgSrc: String!,
+            mobileImageTitle: String!, 
+            mobileImageAltText: String!, 
+            mobileImgSrc: String!,
+        ): ProjectMutation
+    }
+
     "Add mutation specific fields when mutating a project"
     type ProjectMutation {
         "Like HTTP status response code"
