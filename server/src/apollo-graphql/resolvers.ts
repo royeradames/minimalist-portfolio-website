@@ -134,7 +134,12 @@ const resolvers = {
             
         }
     },
-    
+    Project: {
+        Title: ({ProjectTitle}) => ProjectTitle,
+        heroImg: ({HeroImg}, {dataSources}) => dataSources.db.getImage(HeroImg),
+        desktopPreview: ({DesktopPreview}, {dataSources}) => dataSources.db.getImage(DesktopPreview),
+        mobilePreview: ({MobilePreview}, {dataSources}) => dataSources.db.getImage(MobilePreview),
+    }
 }
 
 export default resolvers
