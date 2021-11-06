@@ -7,5 +7,9 @@ import TrackDB from "./apollo-graphql/datasources/track-db"
 const knexConfig = require("./knexfile")
 const environment = process.env.DB_ENV || "development"
 
-
+/* initialize server */
+const server = new ApolloServer({
+    typeDefs, 
+    resolvers,
+})
 
