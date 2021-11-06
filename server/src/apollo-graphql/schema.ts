@@ -1,6 +1,15 @@
 import {gql} from "apollo-server"
 
 const typeDefs = gql`
+    type Query{
+        "Query to get a list of all projects from the portfolio."
+        portfolio: [Project!]!
+        "Find a project by it's ID"
+        projectById (id: ID!): Project
+        "Find a project by title"
+        projectByTitle(title: String!): Project
+    }
+
     type Mutation {
         "Update a project"
         updateProject( id: ID!, title: String, intro: String, jobTitle: String, background: String, techstack: String): ProjectMutation
