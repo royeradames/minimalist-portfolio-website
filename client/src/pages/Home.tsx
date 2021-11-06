@@ -31,14 +31,14 @@ function Home() {
           {/* show the images depending on the sizes, and the px density */}
           <picture className="home__hero welcome-message__hero">
             <source
-              srcSet={`${homeHeroDesktop} 1x, ${homeHeroDesktop2x}  2x`}
+              srcSet={`${homeHeroDesktop} 1x, ${homeHeroDesktop2x} 2x`}
               media={mediaQueries.desktop}
             />
             <source
-              srcSet={`${homeHeroTable} 1x, ${homeHeroTable2x}  2x`}
+              srcSet={`${homeHeroTable} 1x, ${homeHeroTable2x} 2x`}
               media={mediaQueries.tablet}
             />
-            <source srcSet={`${homeHeroMobile} 1x, ${homeHeroMobile2x}  2x`} />
+            <source srcSet={`${homeHeroMobile} 1x, ${homeHeroMobile2x} 2x`} />
             <img
               src={homeHeroMobile}
               alt="Mac desktop and laptopn on a table."

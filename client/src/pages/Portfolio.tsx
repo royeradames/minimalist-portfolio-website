@@ -57,7 +57,7 @@ const Portfolio = () => {
                 media={mediaQueries.tablet}
               />
               <source
-                srcSet={`${project.imgLinkMobile} 1x, ${project.imgLinkMobile2x}`}
+                srcSet={`${project.imgLinkMobile} 1x, ${project.imgLinkMobile2x} 2x`}
               />
               <img
                 src={project.imgLinkMobile}
