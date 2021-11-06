@@ -1,0 +1,6 @@
+# modules
+node_modules
+# development database
+src/db/royeradamesPortfolio.db3
+# database queries
+src/db/sql_queries
