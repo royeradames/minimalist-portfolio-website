@@ -26,6 +26,12 @@ const Nav = (props: any) => {
       >
         Contact Me
       </Link>
+      <Link
+        to="/signin"
+        className={`nav__link ${props.footer ? "footer__nav-link" : ""}`}
+      >
+        Sign-In
+      </Link>
     </nav>
   );
 };
