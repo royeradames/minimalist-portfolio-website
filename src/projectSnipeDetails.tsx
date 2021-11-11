@@ -1,4 +1,4 @@
-const projectSnipeDetails: {
+export type ProjectSnipeDetails = {
   id: number;
   title: string;
   message: string;
@@ -8,7 +8,8 @@ const projectSnipeDetails: {
   imgLinkTablet2x: string;
   imgLinkDesktop: string;
   imgLinkDesktop2x: string;
-}[] = [
+}[];
+export const projectSnipeDetails: ProjectSnipeDetails = [
   {
     id: 1,
     title: "manage",
@@ -59,5 +60,3 @@ const projectSnipeDetails: {
     imgLinkDesktop2x: "./images/portfolio/desktop/image-portfolio-fylo@2.jpg",
   },
 ];
-
-export default projectSnipeDetails;
